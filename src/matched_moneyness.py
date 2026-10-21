@@ -1,44 +1,75 @@
-"""Matched-moneyness gap measurement for index vs ETF option pairs.
+"""Matched-moneyness gap between ETF options and index options.
 
-The question: if two instruments give the same economic exposure, options on them
-with the same expiry should cost the same once their strikes are put at the same
-moneyness. If they do not, and the difference persists, that is an arbitrage-style
-edge rather than noise.
+This module implements the method that produced ``results/cohort_2022h2.csv``.
 
-Two instruments on the same underlying do NOT necessarily trade at the same price:
-a fund tracking one tenth of an index trades near one tenth of its level. Matching
-"the same strike" therefore compares two different contracts. The only correct
-comparison puts both legs at the same moneyness:
+For one end-of-day snapshot (one quote date):
 
-    matched index strike = round(etf_strike * ratio)
-    ratio                = index_forward / etf_forward
+* ETF leg is root ``SPY``, index leg is root ``SPXW``. The root is the contract
+  symbol with its trailing 15 characters removed, so ``SPX`` (AM-settled
+  monthlies) is a different root and is never mixed in.
+* ``ratio = underlying_close(SPXW) / underlying_close(SPY)`` on that date.
+* Every quoted SPY call strike ``K`` on an expiry 1 to 7 calendar days out is
+  paired with the quoted SPXW call whose strike is nearest to ``K * ratio``
+  (ties go to the lower strike). No strike window around spot and, by default,
+  no tolerance on how far the nearest strike may be.
+* ``gap_bps = 1e4 * (index_mid / ratio - etf_mid) / K``. Positive means the
+  index leg is the more expensive one at the same moneyness.
+* A cohort is one expiry date. Pairs from every quote date that saw that expiry
+  are pooled. The cohort is kept when it has at least 8 distinct ETF strikes.
+  The published table counted pooled pairs instead; on the 2022 H2 sample the
+  two rules (and a per-snapshot rule) keep the same 94 cohorts.
 
-with both forwards taken from put-call parity on the same snapshot.
+Input schema (one CSV row per contract, one quote date per snapshot). Extra
+columns are ignored. Column names follow the HistoricalData.net option files.
 
-No data ships with this module. Feed it rows from any source with a documented
-schema (see README) or use the parser below.
+==================  =========================================================
+``contract``        OSI symbol, e.g. ``SPXW220819C03620000``; root is
+                    ``contract[:-15]``
+``quote_date``      YYYY-MM-DD, the session the row belongs to
+``expiration``      YYYY-MM-DD
+``type``            ``call`` or ``put``
+``strike``          strike in the instrument's own units
+``bid``, ``ask``    blank, zero, one-sided or crossed quotes are dropped
+``underlying_close``  close of the underlying on ``quote_date``
+==================  =========================================================
+
+No data ships with this module.
 """
 from __future__ import annotations
 
+import bisect
 import re
 import statistics as st
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from datetime import date
 from typing import Iterable
 
 OCC = re.compile(r"^([A-Z]+)(\d{6})([CP])(\d{8})$")
 
-# Thresholds used in the published test. They were fixed before the data was
-# opened and are not tuned here.
+ETF_ROOT = "SPY"
+INDEX_ROOT = "SPXW"
+INPUT_COLUMNS = ("contract", "quote_date", "expiration", "type", "strike",
+                 "bid", "ask", "underlying_close")
+
+# Thresholds of the published test. Fixed before the data was opened.
 MIN_EFFECT_BPS = 2.0
 MIN_SAME_DIRECTION_SHARE = 0.60
 NULL_BAND_BPS = 1.0
 MIN_COHORTS = 8
 MIN_COHORT_STRIKES = 8
-NEAR_MONEY_BAND = 0.02
+
+# Defaults that reproduce results/cohort_2022h2.csv.
+MIN_DTE = 1
+MAX_DTE = 7
+DEFAULT_RATIO_METHOD = "close"     # "close" or "parity"
+DEFAULT_MAX_OFFSET = None          # no tolerance on the matched strike
+NEAR_MONEY_BAND = 0.02             # parity variant only
+OFFSET_REPORT_POINTS = 1.0         # pairs further off than this are counted
 
 
 @dataclass(frozen=True)
 class Quote:
+    root: str
     expiry: str      # YYYY-MM-DD
     strike: float
     side: str        # "call" | "put"
@@ -47,7 +78,31 @@ class Quote:
 
     @property
     def mid(self) -> float:
-        return (self.bid + self.ask) / 2.0
+        return (self.bid + self.ask) / 2
+
+
+@dataclass(frozen=True)
+class Pair:
+    quote_date: str
+    expiry: str
+    etf_strike: float
+    index_strike: float
+    etf_mid: float
+    index_mid: float
+    ratio: float
+    offset_etf_points: float   # index_strike / ratio - etf_strike
+    gap_bps: float
+
+
+@dataclass
+class Snapshot:
+    quote_date: str
+    chain: dict                                   # (root, expiry, strike, side) -> Quote
+    closes: dict                                  # root -> float
+    close_values: dict = field(default_factory=dict)   # root -> set of closes seen
+
+    def close_is_unique(self, root: str) -> bool:
+        return len(self.close_values.get(root, ())) == 1
 
 
 def parse_occ(symbol: str) -> dict | None:
@@ -64,112 +119,110 @@ def parse_occ(symbol: str) -> dict | None:
     }
 
 
-def build_chain(rows: Iterable[dict]) -> dict:
-    """Key quotes by (expiry, strike, side).
+def contract_root(contract: str) -> str:
+    """Product root of an OSI symbol: the symbol without its last 15 characters."""
+    return (contract or "").strip()[:-15]
 
-    Keying by strike alone silently mixes expiries, because a chain file carries
-    every listed expiry at once. One-sided or crossed quotes are dropped rather
-    than mid-pointed: a zero bid is not a price.
+
+def _num(x) -> float | None:
+    if x in ("", None):
+        return None
+    try:
+        return float(x)
+    except ValueError:
+        return None
+
+
+def load_snapshot(rows: Iterable[dict], roots: tuple = (ETF_ROOT, INDEX_ROOT)) -> Snapshot:
+    """Build one quote date's chain and underlying closes from schema rows.
+
+    Quotes are keyed by (root, expiry, strike, side). All rows must share one
+    ``quote_date``; mixing dates raises instead of letting one day overwrite
+    another. Closes are read from every row of a root, including rows whose
+    quote is later dropped. When a root carries more than one close the lowest
+    is used and ``close_is_unique`` reports it.
     """
-    chain: dict[tuple[str, float, str], Quote] = {}
+    chain: dict = {}
+    close_values: dict = {r: set() for r in roots}
+    quote_date = None
     for r in rows:
-        parts = parse_occ(r.get("symbol") or r.get("option") or "")
-        if not parts:
+        root = contract_root(r.get("contract", ""))
+        if root not in close_values:
             continue
-        try:
-            bid, ask = float(r["bid"]), float(r["ask"])
-        except (KeyError, TypeError, ValueError):
+        qd = r["quote_date"]
+        if quote_date is None:
+            quote_date = qd
+        elif qd != quote_date:
+            raise ValueError(f"rows from two quote dates in one snapshot: {quote_date}, {qd}")
+        uc = _num(r.get("underlying_close"))
+        if uc:
+            close_values[root].add(uc)
+        bid, ask = _num(r.get("bid")), _num(r.get("ask"))
+        if bid is None or ask is None or bid <= 0 or ask <= 0 or ask < bid:
             continue
-        if bid <= 0 or ask <= 0 or ask < bid:
-            continue
-        chain[(parts["expiry"], parts["strike"], parts["side"])] = Quote(
-            expiry=parts["expiry"], strike=parts["strike"], side=parts["side"],
-            bid=bid, ask=ask)
-    return chain
+        key = (root, r["expiration"], float(r["strike"]), r["type"])
+        if key in chain:
+            raise ValueError(f"duplicate quote for {key} on {quote_date}")
+        chain[key] = Quote(root=root, expiry=key[1], strike=key[2], side=key[3], bid=bid, ask=ask)
+    closes = {root: min(v) for root, v in close_values.items() if v}
+    return Snapshot(quote_date=quote_date or "", chain=chain, closes=closes, close_values=close_values)
 
 
-def expiries(chain: dict) -> list[str]:
-    return sorted({e for (e, _k, _s) in chain})
+def build_chain(rows: Iterable[dict], roots: tuple = (ETF_ROOT, INDEX_ROOT)) -> dict:
+    """Chain only, keyed by (root, expiry, strike, side). See ``load_snapshot``."""
+    return load_snapshot(rows, roots).chain
 
 
-def forward(chain: dict, expiry: str, spot: float, band: float = NEAR_MONEY_BAND):
-    """Zero-rate put-call parity forward from a tight near-the-money window.
+def expiries(chain: dict, root: str) -> list:
+    return sorted({e for (r, e, _k, _s) in chain if r == root})
 
-    Using the whole chain pulls in far out-of-the-money strikes whose quotes are
-    not real markets; that produced a forward several percent off and unusable
-    gaps. Returns (forward, number_of_strikes_used).
+
+def calls(chain: dict, root: str, expiry: str) -> dict:
+    """Quoted calls of one root and expiry, strike -> Quote."""
+    return {k: q for (r, e, k, s), q in chain.items() if r == root and e == expiry and s == "call"}
+
+
+def forward(chain: dict, root: str, expiry: str, spot: float, band: float = NEAR_MONEY_BAND):
+    """Zero-rate put-call parity forward from strikes within +-band of this root's own spot.
+
+    Returns (forward, number_of_strikes_used) or (None, 0). Used only by the
+    parity ratio variant.
     """
     lo, hi = spot * (1 - band), spot * (1 + band)
-    strikes = sorted({k for (e, k, _s) in chain if e == expiry and lo <= k <= hi})
     values = []
-    for k in strikes:
-        c, p = chain.get((expiry, k, "call")), chain.get((expiry, k, "put"))
-        if c and p:
-            values.append(k + c.mid - p.mid)
+    for (r, e, k, s), c in chain.items():
+        if r == root and e == expiry and s == "call" and lo <= k <= hi:
+            p = chain.get((root, expiry, k, "put"))
+            if p is not None:
+                values.append(k + c.mid - p.mid)
     if not values:
         return None, 0
     return st.median(values), len(values)
 
 
-def spot_proxy(chain: dict, expiry: str) -> float | None:
-    """Rough spot when no underlying print is available, used only to pick the band."""
-    strikes = sorted({k for (e, k, _s) in chain if e == expiry and _s == "call"})
-    if not strikes:
-        return None
-    return strikes[len(strikes) // 2]
+def ratio_for(snapshot: Snapshot, expiry: str, method: str = DEFAULT_RATIO_METHOD,
+              etf_root: str = ETF_ROOT, index_root: str = INDEX_ROOT) -> float | None:
+    """Index-to-ETF ratio. ``close``: ratio of underlying closes (the published method).
 
-
-def matched_gap(etf_chain: dict, index_chain: dict, expiry: str,
-                etf_spot: float | None = None, max_strike_distance: float = 8.0) -> dict | None:
-    """Gap between the two legs at equal moneyness, in ETF points.
-
-    `gap = index_mid / ratio - etf_mid`, so a positive number means the index leg
-    is the more expensive one at the same moneyness.
+    ``parity``: ratio of parity forwards, each from a band around its own close.
     """
-    etf_spot = etf_spot or spot_proxy(etf_chain, expiry)
-    if not etf_spot:
+    e_close, i_close = snapshot.closes.get(etf_root), snapshot.closes.get(index_root)
+    if not e_close or not i_close:
         return None
-    index_forward, n_parity = forward(index_chain, expiry, etf_spot)
-    if not index_forward:
-        return None
-    etf_forward, _ = forward(etf_chain, expiry, etf_spot)
-    if not etf_forward:
-        return None
-    ratio = index_forward / etf_forward
+    if method == "close":
+        return i_close / e_close
+    if method == "parity":
+        f_e, _ = forward(snapshot.chain, etf_root, expiry, e_close)
+        f_i, _ = forward(snapshot.chain, index_root, expiry, i_close)
+        return f_i / f_e if f_e and f_i else None
+    raise ValueError(f"unknown ratio method {method!r}")
 
-    etf_strikes = sorted({k for (e, k, s) in etf_chain if e == expiry and s == "call"})
-    index_strikes = sorted({k for (e, k, s) in index_chain if e == expiry and s == "call"})
-    if not etf_strikes or not index_strikes:
-        return None
-    anchor = min(etf_strikes, key=lambda k: abs(k - etf_spot))
 
-    same, matched, pairs = [], [], []
-    for k in [k for k in etf_strikes if abs(k - anchor) <= max_strike_distance]:
-        e_row = etf_chain.get((expiry, k, "call"))
-        if not e_row:
-            continue
-        i_same = index_chain.get((expiry, k, "call"))
-        if i_same:
-            same.append(i_same.mid / ratio - e_row.mid)
-        target = k * ratio
-        near = min(index_strikes, key=lambda x: abs(x - target))
-        i_row = index_chain.get((expiry, near, "call"))
-        if i_row:
-            matched.append(i_row.mid / ratio - e_row.mid)
-            pairs.append({"etf_strike": k, "index_strike": near})
-
-    if not matched:
-        return None
-    return {
-        "expiry": expiry,
-        "ratio": round(ratio, 6),
-        "parity_strikes": n_parity,
-        "anchor_strike": anchor,
-        "median_same_strike_gap": st.median(same) if same else None,
-        "median_matched_gap": st.median(matched),
-        "n_matched": len(matched),
-        "pairs": pairs,
-    }
+def nearest_strike(sorted_strikes: list, target: float) -> float:
+    """Nearest strike to target; on an exact tie the lower strike wins."""
+    i = bisect.bisect_left(sorted_strikes, target)
+    candidates = sorted_strikes[max(i - 1, 0):i + 1]
+    return min(candidates, key=lambda x: (abs(x - target), x))
 
 
 def gap_bps(gap_points: float, etf_strike: float) -> float:
@@ -177,8 +230,80 @@ def gap_bps(gap_points: float, etf_strike: float) -> float:
     return 10000.0 * gap_points / etf_strike if etf_strike else float("nan")
 
 
-def cohort_summary(per_cohort_bps: dict[str, list[float]], min_strikes: int = MIN_COHORT_STRIKES):
-    """Median gap per cohort. A cohort is one expiry date."""
+def matched_gap(chain: dict, expiry: str, ratio: float, quote_date: str = "",
+                etf_root: str = ETF_ROOT, index_root: str = INDEX_ROOT,
+                max_offset: float | None = DEFAULT_MAX_OFFSET) -> dict | None:
+    """Pair every quoted ETF call of ``expiry`` with the nearest quoted index call.
+
+    ``max_offset`` (ETF points) drops pairs whose index strike, divided by the
+    ratio, sits further than that from the ETF strike. ``None`` keeps every pair,
+    which is how the published table was made.
+    """
+    e_calls = calls(chain, etf_root, expiry)
+    i_calls = calls(chain, index_root, expiry)
+    if not e_calls or not i_calls or not ratio:
+        return None
+    i_strikes = sorted(i_calls)
+    pairs, n_far, n_dropped = [], 0, 0
+    for k in sorted(e_calls):
+        near = nearest_strike(i_strikes, k * ratio)
+        offset = near / ratio - k
+        if abs(offset) > OFFSET_REPORT_POINTS:
+            n_far += 1
+        if max_offset is not None and abs(offset) > max_offset:
+            n_dropped += 1
+            continue
+        e_mid, i_mid = e_calls[k].mid, i_calls[near].mid
+        pairs.append(Pair(quote_date=quote_date, expiry=expiry, etf_strike=k, index_strike=near,
+                          etf_mid=e_mid, index_mid=i_mid, ratio=ratio, offset_etf_points=offset,
+                          gap_bps=gap_bps(i_mid / ratio - e_mid, k)))
+    if not pairs:
+        return None
+    return {
+        "expiry": expiry,
+        "ratio": ratio,
+        "pairs": pairs,
+        "n_matched": len(pairs),
+        "median_matched_gap_bps": st.median(p.gap_bps for p in pairs),
+        "n_offset_over_1pt": n_far,
+        "n_dropped_by_tolerance": n_dropped,
+    }
+
+
+def same_strike_gap_bps(chain: dict, expiry: str, ratio: float,
+                        etf_root: str = ETF_ROOT, index_root: str = INDEX_ROOT) -> float | None:
+    """Median gap when both legs use the identical strike. The artefact the method avoids."""
+    e_calls, i_calls = calls(chain, etf_root, expiry), calls(chain, index_root, expiry)
+    gaps = [gap_bps(i_calls[k].mid / ratio - q.mid, k) for k, q in e_calls.items() if k in i_calls]
+    return st.median(gaps) if gaps else None
+
+
+def measure_snapshot(snapshot: Snapshot, min_dte: int = MIN_DTE, max_dte: int = MAX_DTE,
+                     ratio_method: str = DEFAULT_RATIO_METHOD,
+                     max_offset: float | None = DEFAULT_MAX_OFFSET,
+                     etf_root: str = ETF_ROOT, index_root: str = INDEX_ROOT) -> dict:
+    """All matched pairs of one snapshot.
+
+    Returns {"pairs": [...], "n_offset_over_1pt": int, "n_dropped_by_tolerance": int}.
+    """
+    out = {"pairs": [], "n_offset_over_1pt": 0, "n_dropped_by_tolerance": 0}
+    qd = date.fromisoformat(snapshot.quote_date)
+    index_expiries = set(expiries(snapshot.chain, index_root))
+    for exp in expiries(snapshot.chain, etf_root):
+        dte = (date.fromisoformat(exp) - qd).days
+        if not (min_dte <= dte <= max_dte) or exp not in index_expiries:
+            continue
+        ratio = ratio_for(snapshot, exp, ratio_method, etf_root, index_root)
+        g = matched_gap(snapshot.chain, exp, ratio, snapshot.quote_date, etf_root, index_root, max_offset)
+        if g:
+            out["pairs"].extend(g["pairs"])
+            out["n_offset_over_1pt"] += g["n_offset_over_1pt"]
+            out["n_dropped_by_tolerance"] += g["n_dropped_by_tolerance"]
+    return out
+
+
+def cohort_summary(per_cohort_bps: dict, min_strikes: int = MIN_COHORT_STRIKES):
+    """Median gap per cohort (one expiry). Counts pooled pairs, as the published table did."""
     table = []
     for expiry in sorted(per_cohort_bps):
         values = per_cohort_bps[expiry]
@@ -189,7 +314,42 @@ def cohort_summary(per_cohort_bps: dict[str, list[float]], min_strikes: int = MI
     return table
 
 
-def verdict(table: list[dict]) -> dict:
+def cohort_table(pairs: Iterable[Pair], min_strikes: int = MIN_COHORT_STRIKES,
+                 count: str = "distinct_strikes") -> list:
+    """Cohort table from pairs.
+
+    ``count`` sets what the minimum applies to:
+    ``distinct_strikes``  distinct ETF strikes in the cohort (default, the
+                          pre-registered "8 strikes per cohort")
+    ``pairs``             pooled pairs across quote dates, which is how the
+                          published table was filtered
+    ``per_snapshot``      drop each (quote date, expiry) snapshot with fewer
+                          than ``min_strikes`` pairs before pooling
+    """
+    by_snap: dict = {}
+    for p in pairs:
+        by_snap.setdefault((p.expiry, p.quote_date), []).append(p)
+    pooled: dict = {}
+    for (exp, _qd), ps in sorted(by_snap.items()):
+        if count == "per_snapshot" and len(ps) < min_strikes:
+            continue
+        pooled.setdefault(exp, []).extend(ps)
+    table = []
+    for exp in sorted(pooled):
+        ps = pooled[exp]
+        if count == "distinct_strikes":
+            enough = len({p.etf_strike for p in ps}) >= min_strikes
+        elif count in ("pairs", "per_snapshot"):
+            enough = len(ps) >= min_strikes
+        else:
+            raise ValueError(f"unknown count rule {count!r}")
+        if enough:
+            table.append({"cohort_expiry": exp, "n_pairs": len(ps),
+                          "median_gap_bps": round(st.median(p.gap_bps for p in ps), 3)})
+    return table
+
+
+def verdict(table: list) -> dict:
     """Apply the rule fixed before the data was opened."""
     if len(table) < MIN_COHORTS:
         return {"verdict": "NOT_ESTIMABLE",
