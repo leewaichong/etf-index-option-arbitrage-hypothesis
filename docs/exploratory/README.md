@@ -12,3 +12,4 @@ Most runs used retained Cboe delayed snapshots from October 2026, and the execut
 - [IV term gap](iv-term-gap.md) splits the ETF minus index IV gap by expiry bucket and option type.
 - [Smile, skew, premium and volume probe](smile-skew-premium-volume.md) compares SPY and SPX IV by delta band and checks premium against volume.
 - [Execution-cost surface](execution-cost-surface.md) finds the widest spread a given richness survives in a synthetic cost model.
+- [Other ETF pairs on the same index](other-etf-pairs.md) screens SPY and IVV, QQQ and QQQM, GLD and IAU, IWM and VTWO for a same-feed test. All four failed on availability.
