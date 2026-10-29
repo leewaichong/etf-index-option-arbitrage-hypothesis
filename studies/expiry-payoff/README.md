@@ -18,6 +18,9 @@ the research. No dependable executable edge has been established.
   compares prior-close and session-open selection with the entry-close control.
 - [Legacy stock-reference comparison](../../results/expiry-payoff/stock-reference-comparison.md)
   reports the fixed 2019 and 2022 contracts under five stock-reference arms.
+- [Overnight stock-hedge study](../../results/expiry-payoff/overnight-stock-hedge.md)
+  evaluates fixed-share hedges and an opening-price ITM hedge rule across four
+  periods. The results do not establish repeatable profit after costs.
 - [Approved aggregate report](../../reports/expiry-payoff/executive-report-20261029.pdf)
   contains the stock-reference comparison report.
 

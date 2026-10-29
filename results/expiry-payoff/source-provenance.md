@@ -2,7 +2,12 @@
 
 Original source checkout HEAD: `a922aa7a79c91d748d26048ecef694e9a93c45f1`.
 
-Hashes compare each allowlisted original source file with its public export. The inventory includes the requested code, ten test files and four runners. It lists no private file paths, row selections, run artifacts or licensed inputs.
+The overnight-hedge export was evaluated from a separate clean source checkout
+at `db5d980c7abc344af02e8ae98fc426da92df433e` on 2026-10-29. That evaluated
+source SHA is distinct from the original checkout HEAD above. The two added
+files below were copied byte-for-byte from that checkout.
+
+Hashes compare each allowlisted original source file with its public export. The inventory includes twelve source files, eleven test files and four runners. It lists no private file paths, row selections, run artifacts or licensed inputs.
 
 | File | Original SHA-256 | Exported SHA-256 |
 |---|---|---|
@@ -31,6 +36,8 @@ Hashes compare each allowlisted original source file with its public export. The
 | `scripts/expiry_extension.py` | `dd28a5dd65eb35df924e5d0ca9052a2936afc0df35c98a810d758cc6e7a0d9af` | `dd28a5dd65eb35df924e5d0ca9052a2936afc0df35c98a810d758cc6e7a0d9af` |
 | `scripts/expiry_replication.py` | `e2a3dd803e818057bbbce5c919e60861e074821518490f0d0204df89842ca5e3` | `46ddc5f2dd7bba78e309993cea592115e3d3bf62aa788902256e49b8ad5acdb0` |
 | `scripts/expiry_attribution.py` | `3e0858f960f926adbb6ca3aebe77fa520e8a58e4c13c12707d9cdf4982bf3ccd` | `3e0858f960f926adbb6ca3aebe77fa520e8a58e4c13c12707d9cdf4982bf3ccd` |
+| `src/spyspx/overnight_hedge.py` | `6cca6772325e7d55c8a85ef6a444681d2a54175e9ddfb10949dfdae6748337f3` | `6cca6772325e7d55c8a85ef6a444681d2a54175e9ddfb10949dfdae6748337f3` |
+| `tests/test_overnight_hedge.py` | `c98e909bb4ee0534ce127cc56d40a2e720bcfcc93630d24af4159a305fc4850b` | `c98e909bb4ee0534ce127cc56d40a2e720bcfcc93630d24af4159a305fc4850b` |
 
 ## Publication-only edits
 
@@ -38,4 +45,5 @@ Hashes compare each allowlisted original source file with its public export. The
 - `scripts/expiry_replication.py` replaces its machine-specific input default with `SPYSPX_2019_INPUT_ROOT` and an ignored repository-relative default.
 - `tests/test_optionmetrics_timing.py` keeps all protocol, manifest and prior-version hash assertions. It skips this private-fixture integration check only when one or more of its three frozen control files are absent.
 - `tests/test_expiry_attribution.py` creates its ignored `runs/` scratch parent before making the synthetic CLI sandbox, so the tests work in a fresh checkout without a global bootstrap.
+- `src/spyspx/overnight_hedge.py` and `tests/test_overnight_hedge.py` were copied byte-for-byte from the clean evaluated source checkout at `db5d980c7abc344af02e8ae98fc426da92df433e`.
 - All other allowlisted code, tests and runners match the source checkout byte-for-byte.
