@@ -8,12 +8,15 @@ evaluation compares ten short SPY calls with one long SPXW call, each with a
 full-cross fill, 5% gross funding and 1 bp stock slippage. Values are mean
 dollars per selected expiry.
 
+See the [assessment PDF](../../reports/expiry-payoff/executive-report-20261030.pdf)
+and [full report with scenario and uncertainty tables](../../reports/expiry-payoff/overnight-hedge-assessment-20261030.md).
+
 | Period | Expiries | No hedge | 500 shares | 1,000 shares | Opening ITM rule |
 |---|---:|---:|---:|---:|---:|
 | 2019 | 9 | -827.24 | -792.27 | -757.30 | -610.75 |
 | 2022 H2 | 63 | +96.47 | -190.13 | -476.73 | -136.85 |
 | 2024 | 195 | -508.10 | -211.54 | +85.02 | -90.03 |
-| 2025 partial | 127 | +191.97 | +43.21 | -105.54 | +653.39 |
+| 2025 (Jan-Aug, through Aug 28 expiry) | 127 | +191.97 | +43.21 | -105.54 | +653.39 |
 
 The primary 500-share estimates are -$190.13 in 2022 H2 (95% interval
 [-$591.85, $255.63]), -$211.54 in 2024 ([-$447.40, $10.25]) and +$43.21 in
@@ -30,8 +33,9 @@ close nor the assignment outcome.
 The opening ITM rule is positive in 2025, with a mean of +$653.39 and a 95%
 interval of [$125.64, $1,274.85]. Its mean is -$136.85 in 2022 H2 (interval
 [-$363.56, $96.43]) and -$90.03 in 2024 ([-$279.89, $99.65]). In 2025 its
-median is -$10.08, and 48 of 127 expiries have nonzero residual stock. The
-2025 mean includes +$777.20 per expiry from overnight stock-price movement.
+median is -$10.08. The positive morning-price rule leaves modeled residual
+stock positions on 48 of 127 expiries. Its mean includes +$777.20 per expiry
+from overnight stock-price movement.
 That positive secondary case is part of the record; it does not make the
 result repeatable across periods.
 
@@ -46,7 +50,7 @@ guaranteed upper bound.
 | 2019 | -$63.75 |
 | 2022 H2 | -$85.27 |
 | 2024 | -$71.93 |
-| 2025 partial | -$90.96 |
+| 2025 (Jan-Aug, through Aug 28 expiry) | -$90.96 |
 
 These values use the same full-cross, 5% gross-funding and 1 bp slippage case.
 
@@ -84,6 +88,10 @@ periods. Legacy 2019 and 2022 clock conventions remain unresolved.
 All reported 95% intervals are descriptive ISO year/week cluster bootstraps
 with 10,000 draws, seed 20261030 and type-7 quantiles. Paired arms use shared
 draw indices. No untouched or predictive holdout was used.
+
+The 36 legacy no-hedge controls at zero stock slippage reproduce the earlier
+results. The main comparison adds 1 bp stock slippage; the 2022 no-hedge mean is
+$96.47 under that assumption, compared with $114.07 in the earlier result.
 
 The historical inputs had already been inspected. The evaluation did not run a
 0DTE delta strategy or option closeout. Its assignment threshold is a proxy,

@@ -21,8 +21,11 @@ the research. No dependable executable edge has been established.
 - [Overnight stock-hedge study](../../results/expiry-payoff/overnight-stock-hedge.md)
   evaluates fixed-share hedges and an opening-price ITM hedge rule across four
   periods. The results do not establish repeatable profit after costs.
-- [Approved aggregate report](../../reports/expiry-payoff/executive-report-20261029.pdf)
-  contains the stock-reference comparison report.
+- [Overnight-hedge assessment PDF](../../reports/expiry-payoff/executive-report-20261030.pdf)
+  and [full Markdown tables](../../reports/expiry-payoff/overnight-hedge-assessment-20261030.md)
+  report the 2026-10-30 assessment.
+- [Previous stock-reference report](../../reports/expiry-payoff/executive-report-20261029.pdf)
+  contains the earlier stock-reference comparison.
 
 ## Source and rerun status
 
