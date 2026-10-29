@@ -39,6 +39,24 @@ Hashes compare each allowlisted original source file with its public export. The
 | `src/spyspx/overnight_hedge.py` | `6cca6772325e7d55c8a85ef6a444681d2a54175e9ddfb10949dfdae6748337f3` | `6cca6772325e7d55c8a85ef6a444681d2a54175e9ddfb10949dfdae6748337f3` |
 | `tests/test_overnight_hedge.py` | `c98e909bb4ee0534ce127cc56d40a2e720bcfcc93630d24af4159a305fc4850b` | `c98e909bb4ee0534ce127cc56d40a2e720bcfcc93630d24af4159a305fc4850b` |
 
+## 2023 morning-hedge export
+
+The public checkout HEAD is `9208a575df30da1bcc9bd28525ed45b06e4644aa`.
+The 2023 adapter was evaluated from a different clean source checkout at
+`64e72887b782fdf838257a09877ffb817dfbfbdf`. The source module matches its
+evaluated bytes exactly. The
+public test file has eight fixture-aware skip markers so its calendar and
+manifest tests run when the private frozen fixtures are present; test assertions
+are unchanged.
+
+| File | Evaluated SHA-256 | Public SHA-256 |
+|---|---|---|
+| `src/spyspx/morning_hedge_2023.py` | `02cd50de29e5c843a2bbace14ce1825d6027ea2268eec105878396a2030b8a13` | `02cd50de29e5c843a2bbace14ce1825d6027ea2268eec105878396a2030b8a13` |
+| `tests/test_morning_hedge_2023.py` before fixture-aware skip markers | `9107f63b64d4affb079d863cd68f76dbf4e0982d5e63359ce636188a85bacb48` | `6afafbf4d332e0f1b0cdf0965eecc87777307489cb503d69c5cd48691dea2a6d` |
+
+The public historical rerun remains **NOT RUN**. The evaluated run used licensed
+inputs and private frozen controls that are not included in this repository.
+
 ## Publication-only edits
 
 - `src/spyspx/optionmetrics_stockrefs.py` replaces machine-specific input and code roots with documented `SPYSPX_STOCKREFS_*` variables and ignored repository-relative defaults. Frozen hashes, accounting, selection and parity guards remain intact.

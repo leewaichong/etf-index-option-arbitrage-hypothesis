@@ -10,14 +10,17 @@ hypothetical daily-close cash ledgers, modeled carry and costs, and later
 historical sensitivities. Its results do not revise the matched-moneyness
 measurement.
 
-The 2026-10-29 stock-reference PDF refers to a fuller Markdown report and
-supporting inputs, commands, source inventory and receipts retained privately.
-The 2026-10-30 overnight-hedge assessment and its full Markdown report are
-included under `reports/expiry-payoff/`. Read the
-[assessment PDF](reports/expiry-payoff/executive-report-20261030.pdf) or its
-[full Markdown report](reports/expiry-payoff/overnight-hedge-assessment-20261030.md).
-Public result notes contain aggregate summaries, not the private receipts or
-licensed inputs.
+The latest expiry-payoff addition is the 2023 morning-hedge replication. Its
+[summary](results/expiry-payoff/morning-hedge-replication-2023.md) links the
+[full assessment](reports/expiry-payoff/morning-hedge-assessment-20261030.md)
+and [PDF](reports/expiry-payoff/morning-hedge-assessment-20261030.pdf).
+The earlier 2026-10-30 overnight-hedge assessment remains in
+[Markdown](reports/expiry-payoff/overnight-hedge-assessment-20261030.md) and
+[PDF](reports/expiry-payoff/executive-report-20261030.pdf). The 2026-10-29
+stock-reference report remains available as the
+[previous stock-reference PDF](reports/expiry-payoff/executive-report-20261029.pdf).
+Public result notes contain aggregate summaries, not the licensed inputs or
+private run receipts.
 
 **For this matched-moneyness study, no.** Three independent datasets, 46,553
 matched pairs, and the gap at equal moneyness is well under one basis point.

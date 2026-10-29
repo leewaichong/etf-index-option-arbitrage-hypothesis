@@ -19,13 +19,17 @@ the research. No dependable executable edge has been established.
 - [Legacy stock-reference comparison](../../results/expiry-payoff/stock-reference-comparison.md)
   reports the fixed 2019 and 2022 contracts under five stock-reference arms.
 - [Overnight stock-hedge study](../../results/expiry-payoff/overnight-stock-hedge.md)
-  evaluates fixed-share hedges and an opening-price ITM hedge rule across four
-  periods. The results do not establish repeatable profit after costs.
-- [Overnight-hedge assessment PDF](../../reports/expiry-payoff/executive-report-20261030.pdf)
-  and [full Markdown tables](../../reports/expiry-payoff/overnight-hedge-assessment-20261030.md)
-  report the 2026-10-30 assessment.
-- [Previous stock-reference report](../../reports/expiry-payoff/executive-report-20261029.pdf)
-  contains the earlier stock-reference comparison.
+  compares fixed-share hedges and an opening-price rule across four periods. It
+  does not establish repeatable profit after costs.
+- [2023 morning-hedge replication](../../results/expiry-payoff/morning-hedge-replication-2023.md)
+  reports the separately evaluated 196-pair period. Its result does not establish
+  a reliable after-cost edge.
+- [2023 morning-hedge assessment PDF](../../reports/expiry-payoff/morning-hedge-assessment-20261030.pdf)
+  and [full Markdown tables](../../reports/expiry-payoff/morning-hedge-assessment-20261030.md)
+  contain the full report.
+- The earlier [2026-10-30 overnight-hedge assessment](../../reports/expiry-payoff/executive-report-20261030.pdf)
+  and [full Markdown report](../../reports/expiry-payoff/overnight-hedge-assessment-20261030.md)
+  remain available, along with the [2026-10-29 stock-reference report](../../reports/expiry-payoff/executive-report-20261029.pdf).
 
 ## Source and rerun status
 
@@ -37,12 +41,13 @@ and exported hashes and the publication-only changes.
 
 **Implemented:** the source export and synthetic tests are present.
 **Locally verified:** run the offline command below from the repository root.
-**Evaluated:** the three historical followups ran on the clean SHAs recorded in
-their result notes. Those evaluations predate this export.
-**Historical public rerun: NOT RUN.** The public checkout does not contain the
-licensed exports, exact frozen manifests, run receipts or private control files
-needed by the guarded historical runners. Do not treat a local source test as a
-re-evaluation of a strategy.
+**Evaluated:** the historical followups ran on the clean SHAs recorded in their
+result notes. The 2023 morning-hedge evaluation used clean SHA
+`64e72887b782fdf838257a09877ffb817dfbfbdf` and passed independent validation;
+its aggregate counts and validation hash are in the result note.
+**Historical public rerun: NOT RUN.** The public checkout lacks licensed inputs
+and private frozen controls required by the guarded runners. Local tests do not
+rerun a historical strategy evaluation.
 
 Stock-reference inputs default under the ignored `data/expiry-payoff/stockrefs/`
 directory. In this public port, place the 2022 option archive at
