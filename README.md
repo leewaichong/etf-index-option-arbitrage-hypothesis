@@ -1,7 +1,23 @@
 # Does the index-versus-ETF option gap survive matched moneyness?
 
-**No.** Three independent datasets, 46,553 matched pairs, and the gap at equal
-moneyness is well under one basis point. That is far smaller than the cost of
+## Study navigation
+
+This repository now contains two studies with different questions. The original
+[matched-moneyness measurement](#method) compares option price levels after
+matching moneyness. Its conclusion below applies only to that close-based method.
+The separate [expiry-payoff study](studies/expiry-payoff/README.md) records
+hypothetical daily-close cash ledgers, modeled carry and costs, and later
+historical sensitivities. Its results do not revise the matched-moneyness
+measurement.
+
+The approved PDF refers to a fuller companion Markdown report and supporting
+inputs, commands, source inventory and receipts retained privately. Those files
+are not part of this public checkout. The public result notes contain aggregate
+summaries only; they do not include the private Markdown report or receipts.
+
+**For this matched-moneyness study, no.** Three independent datasets, 46,553
+matched pairs, and the gap at equal moneyness is well under one basis point.
+That is far smaller than the cost of
 crossing either leg. This repository holds the measurement code, the rule fixed
 before the data was opened, and the aggregate results.
 
@@ -187,8 +203,8 @@ that bar.
 ```bash
 python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
 
-# unit tests (synthetic fixtures, no data, no network)
-.venv/bin/python -m pytest tests -q
+# full offline test suite
+PYTHONPATH=src .venv/bin/python -m pytest tests -q
 
 # rebuild the 2022 H2 table from your own download of the vendor sample
 # (options_sample_2022H2.zip, or its extracted day_by_date folder)
@@ -227,15 +243,20 @@ and `max_offset=1.0` give the variants.
 
 ## Limitations
 
-- Close-based prices are not executable. A gap measured at the close says nothing
-  about what you could have traded.
+These limitations describe the original matched-moneyness measurement above.
+The [expiry-payoff study](studies/expiry-payoff/README.md) has its own accounting
+scope, including modeled costs and carry, and its own limitations.
+
+- Close-based option prices are not executable. A gap measured at the close says
+  nothing about what you could have traded.
 - The method compares mid prices. A real trade crosses the spread, which is larger
   than the effect being measured.
 - Only calls were used. A put-side test would be a useful independent check.
 - The ratio comes from two closing prints, not from the option prices, and the
   nearest listed strike can sit well away from exact moneyness. Both choices move
   the sign mix, as the variant table shows.
-- Nothing here accounts for borrow, financing, dividends or settlement mechanics.
+- This matched-moneyness method does not account for borrow, financing, dividends
+  or settlement mechanics.
 
 ## Side ideas
 
