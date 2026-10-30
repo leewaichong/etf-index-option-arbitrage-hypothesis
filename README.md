@@ -10,10 +10,17 @@ hypothetical daily-close cash ledgers, modeled carry and costs, and later
 historical sensitivities. Its results do not revise the matched-moneyness
 measurement.
 
-The latest expiry-payoff addition is the 2023 morning-hedge replication. Its
-[summary](results/expiry-payoff/morning-hedge-replication-2023.md) links the
-[full assessment](reports/expiry-payoff/morning-hedge-assessment-20261030.md)
-and [PDF](reports/expiry-payoff/morning-hedge-assessment-20261030.pdf).
+The latest expiry-payoff addition is a post-hoc year-driver attribution of the
+2023 and 2025 morning-hedge cohorts. Read the
+[attribution note](results/expiry-payoff/morning-hedge-year-drivers-20261030.md)
+and [approved aggregate summary](results/expiry-payoff/morning-hedge-year-drivers-20261030-summary.json).
+The 15:59 option-quote clock is verified for 2025; the 2023 quote clock remains
+unverified.
+The [final eight-page morning-hedge assessment](reports/expiry-payoff/morning-hedge-assessment-20261030.md)
+and [PDF](reports/expiry-payoff/morning-hedge-assessment-20261030.pdf) describe
+the primary strategy evaluation. The prior report version is preserved in the
+[archive](reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.md)
+with its [PDF](reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.pdf).
 The earlier 2026-10-30 overnight-hedge assessment remains in
 [Markdown](reports/expiry-payoff/overnight-hedge-assessment-20261030.md) and
 [PDF](reports/expiry-payoff/executive-report-20261030.pdf). The 2026-10-29

@@ -57,6 +57,37 @@ are unchanged.
 The public historical rerun remains **NOT RUN**. The evaluated run used licensed
 inputs and private frozen controls that are not included in this repository.
 
+## Morning-hedge attribution export
+
+The attribution evaluation used clean Git SHA
+`9a7c219c6ef886929621fc3863cf51dca660a6d6`. The exported production module is
+byte-identical to the evaluated module. The public test copy was adapted only in
+the portable authorization test, which now validates in-memory protocol cases
+instead of reading an ignored planning file.
+
+| File | Evaluated SHA-256 | Public SHA-256 |
+|---|---|---|
+| `src/spyspx/morning_hedge_attribution.py` | `36ec51840e6a5ff77ca9403e6557199963bd6b6ec40077bbdcfa965808e129cb` | `36ec51840e6a5ff77ca9403e6557199963bd6b6ec40077bbdcfa965808e129cb` |
+| `tests/test_morning_hedge_attribution.py` before portable authorization test | `af66d70333e5a3362f2b941283b3a2eed47b752310f9367fcc2679c48cb42e45` | `07146b400d78fe52a63bd8e476596ac49310567c09bf6703182463a5ceb40ebd` |
+
+The public aggregate-only attribution summary has SHA-256
+`ac33f98ce67b3f955fb6d2a63958fa1bcc5404ccfed2a471f5271bddf13e06db`. It
+contains selected year-level tables and provenance identifiers, not private
+trade rows or bootstrap draw arrays.
+
+## Final morning-hedge assessment report
+
+The final reviewed report has eight pages. Its public PDF SHA-256 is
+`00758646ff7464ea510ab15c731f1f861520b6e8df60818fdce61f66ee3a6e68`; its
+Markdown SHA-256 is
+`a6ec9bfe318add9eefd87a37548e464beaf5dd89e9f34eb520a9e8fd6875f9c8`.
+The previous public version is preserved in
+`reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.pdf`
+and the corresponding `.md` file. Its archived PDF SHA-256 is
+`2c3640bd158d5a6e86a445b5a327d9f354bd55fa40b859679190475805e41663`; its
+archived Markdown SHA-256 is
+`a9115a0349ab23f64ea32b1dde5339461b4742aeb54ffcbbabdad23aaaeb403b`.
+
 ## Publication-only edits
 
 - `src/spyspx/optionmetrics_stockrefs.py` replaces machine-specific input and code roots with documented `SPYSPX_STOCKREFS_*` variables and ignored repository-relative defaults. Frozen hashes, accounting, selection and parity guards remain intact.

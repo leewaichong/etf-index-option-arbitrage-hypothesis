@@ -24,9 +24,16 @@ the research. No dependable executable edge has been established.
 - [2023 morning-hedge replication](../../results/expiry-payoff/morning-hedge-replication-2023.md)
   reports the separately evaluated 196-pair period. Its result does not establish
   a reliable after-cost edge.
-- [2023 morning-hedge assessment PDF](../../reports/expiry-payoff/morning-hedge-assessment-20261030.pdf)
-  and [full Markdown tables](../../reports/expiry-payoff/morning-hedge-assessment-20261030.md)
-  contain the full report.
+- [Morning-hedge year-driver attribution](../../results/expiry-payoff/morning-hedge-year-drivers-20261030.md)
+  compares 2023 with 2025 and separates the observed overnight stock term from
+  other mean-P&L components. The 15:59 quote clock is verified for 2025; the
+  2023 quote clock remains unverified. It is a post-hoc accounting analysis, not
+  a predictive or causal result.
+- The final eight-page [2023 morning-hedge assessment PDF](../../reports/expiry-payoff/morning-hedge-assessment-20261030.pdf)
+  and [full Markdown report](../../reports/expiry-payoff/morning-hedge-assessment-20261030.md)
+  contain the full report. The prior version is preserved in the
+  [archive](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.md)
+  with its [PDF](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.pdf).
 - The earlier [2026-10-30 overnight-hedge assessment](../../reports/expiry-payoff/executive-report-20261030.pdf)
   and [full Markdown report](../../reports/expiry-payoff/overnight-hedge-assessment-20261030.md)
   remain available, along with the [2026-10-29 stock-reference report](../../reports/expiry-payoff/executive-report-20261029.pdf).
