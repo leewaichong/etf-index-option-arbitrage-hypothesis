@@ -6,8 +6,8 @@ package after modeled costs. Its descriptive 95% interval includes zero. The
 rule improved the mean by $75.58 against the no-stock-hedge control, but that
 paired interval also includes zero.
 
-Read the [full assessment and tables](../../reports/expiry-payoff/morning-hedge-assessment-20261030.md)
-and [PDF](../../reports/expiry-payoff/morning-hedge-assessment-20261030.pdf).
+Read the [archived eight-page assessment and tables](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.md)
+and [PDF](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.pdf).
 The aggregate tables are also available as
 [machine-readable JSON](morning-hedge-replication-2023-summary.json). The 2026-10-30
 overnight-stock-hedge study remains a separate period comparison in the

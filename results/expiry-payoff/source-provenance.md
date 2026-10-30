@@ -75,18 +75,64 @@ The public aggregate-only attribution summary has SHA-256
 contains selected year-level tables and provenance identifiers, not private
 trade rows or bootstrap draw arrays.
 
-## Final morning-hedge assessment report
+## Archived eight-page morning-hedge assessment
 
-The final reviewed report has eight pages. Its public PDF SHA-256 is
+The reviewed eight-page assessment is preserved at
+`reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.pdf`
+and the matching `.md` file. Its PDF SHA-256 is
 `00758646ff7464ea510ab15c731f1f861520b6e8df60818fdce61f66ee3a6e68`; its
 Markdown SHA-256 is
 `a6ec9bfe318add9eefd87a37548e464beaf5dd89e9f34eb520a9e8fd6875f9c8`.
-The previous public version is preserved in
+The earlier five-page version is preserved in
 `reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.pdf`
 and the corresponding `.md` file. Its archived PDF SHA-256 is
 `2c3640bd158d5a6e86a445b5a327d9f354bd55fa40b859679190475805e41663`; its
 archived Markdown SHA-256 is
 `a9115a0349ab23f64ea32b1dde5339461b4742aeb54ffcbbabdad23aaaeb403b`.
+
+## Three-year morning-hedge comparison
+
+The public aggregate summary contains year cohorts, monthly aggregates, tail
+removals, within-year confidence intervals, sensitivities and provenance hashes.
+It omits command arguments that contain private absolute paths. The source
+aggregate SHA-256 is
+`aa4887efd7e11f2478cb361b5ec0af37c863c324581cee2c4e3f17ff1f58aff6`; the
+public sanitized summary SHA-256 is
+`355b7823fdb3e4cf5a1868abdfcd2e00d842238e2d1e07a0254122a67b6468b4`.
+
+The builder ran from clean Git SHA `1ce2763318f930f793da29293f6b5df482ef3b42`
+with code SHA-256
+`c154660c93f5faa269742428d516cf0cd544232147eaa7a7af390a4363ce1047`. The
+2023 evaluator Git SHA was `64e72887b782fdf838257a09877ffb817dfbfbdf`; the
+2024/2025 evaluator Git SHA was `44ed294deddb85df594ad1e1c8a5a91bb22d08d7`.
+The run receipt SHA-256 is
+`f2bc5ec4f7882e0c4339384d82ed4943852a5ee4d8be2e481a3167df032b8004`; the
+approved findings SHA-256 is
+`5e29acbac470ac4ba2d18010d76ba609b8398c7c421dd582e4455f09dfd075c8`.
+
+Independent validation passed 2,397 checks with zero mismatches and maximum
+error `1.78261e-10` at tolerance `1e-7`. Validation record SHA-256 is
+`4d1b55c5c2010a066a86bec07fa14402033145ff36c80bbfeba00a5c0c753876`; its
+execution record SHA-256 is
+`bcff7d85aeb930e872d77c64f54ba8d0ee4f2b135da22ca3041ad4d2f8bd3d0e`.
+The 2024 raw rerun check also passed 2,361,458 checks with zero mismatches; the
+available record identifier begins `b940`.
+
+The final five-page report PDF SHA-256 is
+`3fb35898dccf8153a4bbda99063563c8bd5be429f44f1a210be766867bb822b7`; its
+Markdown SHA-256 is
+`cb4b32d31672bed36e7b97c751b73aba0d8fc9ad4436e4ad4e33c1c243bd312f`.
+The clean render used Git SHA `c2bb0fb52e3a281518d829bebdc9a6d346c92349`;
+the external render receipt SHA-256 is
+`bce5520a753c5e8e01d39624ca8c0c51b76b0bd8ef693b6c4b0d8a61512d6eb7`.
+
+The report renderer was copied byte-for-byte to
+`artifacts/build_morning_three_year_report.py`, SHA-256
+`4e7a946289b3164a3bbb320db2db87fd5deaf12dee90c32197a4ce63c8e74406`. The
+comparison builder and pipeline test were withheld because they contain private
+absolute paths. Their exact hashes are retained in the ignored local receipt.
+The licensed historical inputs are not present in this checkout, so no public
+raw-data evaluation was run.
 
 ## Publication-only edits
 

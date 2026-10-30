@@ -26,14 +26,21 @@ the research. No dependable executable edge has been established.
   a reliable after-cost edge.
 - [Morning-hedge year-driver attribution](../../results/expiry-payoff/morning-hedge-year-drivers-20261030.md)
   compares 2023 with 2025 and separates the observed overnight stock term from
-  other mean-P&L components. The 15:59 quote clock is verified for 2025; the
-  2023 quote clock remains unverified. It is a post-hoc accounting analysis, not
-  a predictive or causal result.
-- The final eight-page [2023 morning-hedge assessment PDF](../../reports/expiry-payoff/morning-hedge-assessment-20261030.pdf)
+  other mean-P&L components. The option-quote clock is verified at 15:59 for
+  2024 and 2025; the 2023 quote clock remains unverified. It is a post-hoc
+  accounting analysis, not a predictive or causal result.
+- [Three-year morning-hedge comparison](../../results/expiry-payoff/morning-hedge-three-year-20261030.md)
+  and [aggregate summary](../../results/expiry-payoff/morning-hedge-three-year-20261030-summary.json)
+  cover the 2023, 2024 and 2025 historical samples. No common-window intervals or
+  between-year p-values were calculated.
+- The five-page [three-year morning-hedge assessment PDF](../../reports/expiry-payoff/morning-hedge-assessment-20261030.pdf)
   and [full Markdown report](../../reports/expiry-payoff/morning-hedge-assessment-20261030.md)
-  contain the full report. The prior version is preserved in the
-  [archive](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.md)
-  with its [PDF](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.pdf).
+  contain the final report. The former eight-page version is preserved in the
+  [eight-page archive](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.md)
+  with its [PDF](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.pdf).
+  The earlier five-page version remains in the
+  [older archive](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.md)
+  and its [PDF](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.pdf).
 - The earlier [2026-10-30 overnight-hedge assessment](../../reports/expiry-payoff/executive-report-20261030.pdf)
   and [full Markdown report](../../reports/expiry-payoff/overnight-hedge-assessment-20261030.md)
   remain available, along with the [2026-10-29 stock-reference report](../../reports/expiry-payoff/executive-report-20261029.pdf).

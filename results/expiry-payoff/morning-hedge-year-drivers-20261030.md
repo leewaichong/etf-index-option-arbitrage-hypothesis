@@ -10,8 +10,8 @@ tradable filter.
 For the broader comparison, 2025 January-August versus all of 2023, the net mean
 gap was $702.35; the overnight term contributed $694.25, or 98.8%. The primary
 report gives the strategy setup and its wider limitations. See the existing
-[morning-hedge report](../../reports/expiry-payoff/morning-hedge-assessment-20261030.md)
-and [PDF](../../reports/expiry-payoff/morning-hedge-assessment-20261030.pdf).
+[archived eight-page morning-hedge report](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.md)
+and [PDF](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.pdf).
 
 ## Cohort means
 
@@ -97,9 +97,9 @@ The full comparison used seed 20261030; the January-August comparison used seed
 20261031. Quantiles use type-7 linear interpolation. The intervals are
 uncorrected for post-hoc analysis.
 
-The strategy is a one-calendar-day theoretical daily-close design. The 2025
-option quotes are timestamped at 15:59 ET, while the stock and settlement
-references use later close values. The 2023 quote clock remains unverified.
+The strategy is a one-calendar-day theoretical daily-close design. The option
+quote clock is verified at 15:59 ET for 2024 and 2025; the 2023 quote clock
+remains unverified. Stock and settlement references use later close values.
 2025 covers January through August only. These figures do not
 establish causality, predictiveness, execution at quoted prices, or a tradable
 filter.
