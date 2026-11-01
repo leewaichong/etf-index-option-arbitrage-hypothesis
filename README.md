@@ -1,7 +1,45 @@
 # Does the index-versus-ETF option gap survive matched moneyness?
 
-**No.** Three independent datasets, 46,553 matched pairs, and the gap at equal
-moneyness is well under one basis point. That is far smaller than the cost of
+## Study navigation
+
+This repository now contains two studies with different questions. The original
+[matched-moneyness measurement](#method) compares option price levels after
+matching moneyness. Its conclusion below applies only to that close-based method.
+The separate [expiry-payoff study](studies/expiry-payoff/README.md) records
+hypothetical daily-close cash ledgers, modeled carry and costs, and later
+historical sensitivities. Its results do not revise the matched-moneyness
+measurement.
+
+The latest expiry-payoff addition is a three-year comparison of the morning-price
+hedge across 2023, 2024 and 2025. See the
+[comparison note](results/expiry-payoff/morning-hedge-three-year-20261030.md)
+and [aggregate summary](results/expiry-payoff/morning-hedge-three-year-20261030-summary.json).
+The preceding addition was a post-hoc year-driver attribution of the
+2023 and 2025 morning-hedge cohorts. Read the
+[attribution note](results/expiry-payoff/morning-hedge-year-drivers-20261030.md)
+and [approved aggregate summary](results/expiry-payoff/morning-hedge-year-drivers-20261030-summary.json).
+The option-quote clock is verified at 15:59 for 2024 and 2025; the 2023 quote
+clock remains unverified.
+The five-page three-year morning-hedge assessment is available at
+[Markdown](reports/expiry-payoff/morning-hedge-assessment-20261030.md) and
+[PDF](reports/expiry-payoff/morning-hedge-assessment-20261030.pdf). The former
+eight-page assessment remains in the
+[eight-page archive](reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.md)
+with its [PDF](reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.pdf).
+The earlier five-page version remains in the
+[older archive](reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.md)
+with its [PDF](reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.pdf).
+The earlier 2026-10-30 overnight-hedge assessment remains in
+[Markdown](reports/expiry-payoff/overnight-hedge-assessment-20261030.md) and
+[PDF](reports/expiry-payoff/executive-report-20261030.pdf). The 2026-10-29
+stock-reference report remains available as the
+[previous stock-reference PDF](reports/expiry-payoff/executive-report-20261029.pdf).
+Public result notes contain aggregate summaries, not the licensed inputs or
+private run receipts.
+
+**For this matched-moneyness study, no.** Three independent datasets, 46,553
+matched pairs, and the gap at equal moneyness is well under one basis point.
+That is far smaller than the cost of
 crossing either leg. This repository holds the measurement code, the rule fixed
 before the data was opened, and the aggregate results.
 
@@ -187,8 +225,8 @@ that bar.
 ```bash
 python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt
 
-# unit tests (synthetic fixtures, no data, no network)
-.venv/bin/python -m pytest tests -q
+# full offline test suite
+PYTHONPATH=src .venv/bin/python -m pytest tests -q
 
 # rebuild the 2022 H2 table from your own download of the vendor sample
 # (options_sample_2022H2.zip, or its extracted day_by_date folder)
@@ -227,15 +265,20 @@ and `max_offset=1.0` give the variants.
 
 ## Limitations
 
-- Close-based prices are not executable. A gap measured at the close says nothing
-  about what you could have traded.
+These limitations describe the original matched-moneyness measurement above.
+The [expiry-payoff study](studies/expiry-payoff/README.md) has its own accounting
+scope, including modeled costs and carry, and its own limitations.
+
+- Close-based option prices are not executable. A gap measured at the close says
+  nothing about what you could have traded.
 - The method compares mid prices. A real trade crosses the spread, which is larger
   than the effect being measured.
 - Only calls were used. A put-side test would be a useful independent check.
 - The ratio comes from two closing prints, not from the option prices, and the
   nearest listed strike can sit well away from exact moneyness. Both choices move
   the sign mix, as the variant table shows.
-- Nothing here accounts for borrow, financing, dividends or settlement mechanics.
+- This matched-moneyness method does not account for borrow, financing, dividends
+  or settlement mechanics.
 
 ## Side ideas
 

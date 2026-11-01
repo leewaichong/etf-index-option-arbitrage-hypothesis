@@ -1,0 +1,2854 @@
+{
+  "cohorts": {
+    "full_2023": {
+      "assignment_counts": {
+        "false": 92,
+        "true": 104
+      },
+      "cost_total": 21049.03302739726,
+      "cost_totals": {
+        "hedge_funding": 9414.523287671233,
+        "option_fees": 1401.4,
+        "premium_debit_funding": 1.958904109589041,
+        "residual_short_borrow": 2102.063835616438,
+        "stock_fees": 850.0,
+        "stock_slippage": 7279.087
+      },
+      "dividend_total": -3144.57,
+      "gross_total": 11452.430000000171,
+      "mean": -48.96226034386179,
+      "median": -66.69621917808213,
+      "n": 196,
+      "option_baseline_total": -1662.9999999998765,
+      "overnight_total": 16260.000000000047,
+      "positive_fraction": 0.4030612244897959,
+      "q0_control_mean": -124.53971188146313,
+      "q0_control_total": -24409.783528766773,
+      "q_counts": {
+        "0": 95,
+        "1000": 101
+      },
+      "residual_counts": {
+        "long": 33,
+        "short": 36,
+        "zero": 127
+      },
+      "retained_costs_net_minus_overnight": -25856.60302739696,
+      "total": -9596.603027396912
+    },
+    "full_2024": {
+      "assignment_counts": {
+        "false": 81,
+        "true": 114
+      },
+      "cost_total": 26792.031342465754,
+      "cost_totals": {
+        "hedge_funding": 13836.204109589042,
+        "option_fees": 1394.25,
+        "premium_debit_funding": 3.336986301369863,
+        "residual_short_borrow": 1628.9942465753425,
+        "stock_fees": 840.0,
+        "stock_slippage": 9089.246
+      },
+      "dividend_total": 1594.94,
+      "gross_total": 9236.94,
+      "mean": -90.02610944854231,
+      "median": -57.15684931506849,
+      "n": 195,
+      "option_baseline_total": 8012.000000000344,
+      "overnight_total": -370.0000000003438,
+      "positive_fraction": 0.38974358974358975,
+      "q0_control_mean": -508.1008918861963,
+      "q0_control_total": -99079.67391780828,
+      "q_counts": {
+        "0": 77,
+        "1000": 118
+      },
+      "residual_counts": {
+        "long": 27,
+        "short": 23,
+        "zero": 145
+      },
+      "retained_costs_net_minus_overnight": -17185.091342465406,
+      "total": -17555.091342465752
+    },
+    "jan_aug_2023": {
+      "assignment_counts": {
+        "false": 63,
+        "true": 68
+      },
+      "cost_total": 13703.352657534246,
+      "cost_totals": {
+        "hedge_funding": 5957.15205479452,
+        "option_fees": 936.6500000000001,
+        "premium_debit_funding": 1.2794520547945203,
+        "residual_short_borrow": 1438.3331506849315,
+        "stock_fees": 570.0,
+        "stock_slippage": 4799.938
+      },
+      "dividend_total": -3144.57,
+      "gross_total": 6351.43000000022,
+      "mean": -56.12154700407644,
+      "median": -47.15547945205502,
+      "n": 131,
+      "option_baseline_total": 186.00000000016098,
+      "overnight_total": 9310.00000000006,
+      "positive_fraction": 0.4122137404580153,
+      "q0_control_mean": -58.49955124960608,
+      "q0_control_total": -7663.4412136983965,
+      "q_counts": {
+        "0": 66,
+        "1000": 65
+      },
+      "residual_counts": {
+        "long": 23,
+        "short": 26,
+        "zero": 82
+      },
+      "retained_costs_net_minus_overnight": -16661.922657534073,
+      "total": -7351.9226575340135
+    },
+    "jan_aug_2024": {
+      "assignment_counts": {
+        "false": 53,
+        "true": 78
+      },
+      "cost_total": 17970.430136986302,
+      "cost_totals": {
+        "hedge_funding": 9121.286301369862,
+        "option_fees": 936.6500000000001,
+        "premium_debit_funding": 1.9342465753424658,
+        "residual_short_borrow": 1146.6295890410959,
+        "stock_fees": 590.0,
+        "stock_slippage": 6173.93
+      },
+      "dividend_total": 1594.94,
+      "gross_total": -1190.0600000000006,
+      "mean": -146.26328348844504,
+      "median": -65.12508219178082,
+      "n": 131,
+      "option_baseline_total": 5595.000000000221,
+      "overnight_total": -8380.000000000222,
+      "positive_fraction": 0.3816793893129771,
+      "q0_control_mean": -505.487557879327,
+      "q0_control_total": -66218.87008219185,
+      "q_counts": {
+        "0": 50,
+        "1000": 81
+      },
+      "residual_counts": {
+        "long": 20,
+        "short": 17,
+        "zero": 94
+      },
+      "retained_costs_net_minus_overnight": -10780.490136986078,
+      "total": -19160.4901369863
+    },
+    "jan_aug_2025": {
+      "assignment_counts": {
+        "false": 58,
+        "true": 69
+      },
+      "cost_total": 19828.503856164385,
+      "cost_totals": {
+        "hedge_funding": 9619.941095890412,
+        "option_fees": 908.0500000000001,
+        "premium_debit_funding": 1.6506849315068493,
+        "residual_short_borrow": 1331.5865753424657,
+        "stock_fees": 615.0,
+        "stock_slippage": 7352.2755
+      },
+      "dividend_total": 1761.1200000000001,
+      "gross_total": 102809.12,
+      "mean": 653.3906782979183,
+      "median": -10.081589041095896,
+      "n": 127,
+      "option_baseline_total": 2343.000000000814,
+      "overnight_total": 98704.99999999919,
+      "positive_fraction": 0.48031496062992124,
+      "q0_control_mean": 191.96643452702048,
+      "q0_control_total": 24379.7371849316,
+      "q_counts": {
+        "0": 52,
+        "1000": 75
+      },
+      "residual_counts": {
+        "long": 27,
+        "short": 21,
+        "zero": 79
+      },
+      "retained_costs_net_minus_overnight": -15724.383856163564,
+      "total": 82980.61614383562
+    }
+  },
+  "confidence_intervals": {
+    "2023": {
+      "absolute": {
+        "high_95": 117.67010002544227,
+        "low_95": -221.01344497462145,
+        "mean": -48.96226034386179,
+        "n": 196
+      },
+      "paired_vs_q0": {
+        "high_95": 273.8890963155381,
+        "low_95": -119.83364411948182,
+        "mean": 75.57745153760133,
+        "n": 196
+      }
+    },
+    "2024": {
+      "absolute": {
+        "high_95": 99.64901149316076,
+        "low_95": -279.88873292979525,
+        "mean": -90.02610944854231,
+        "n": 195
+      },
+      "paired_vs_q0": {
+        "high_95": 714.3243257759954,
+        "low_95": 132.92370221616636,
+        "mean": 418.074782437654,
+        "n": 195
+      }
+    },
+    "2025": {
+      "absolute": {
+        "high_95": 1274.852872331794,
+        "low_95": 125.63619290687497,
+        "mean": 653.3906782979183,
+        "n": 127
+      },
+      "paired_vs_q0": {
+        "high_95": 1063.9321400992503,
+        "low_95": -90.96354885130428,
+        "mean": 461.42424377089776,
+        "n": 127
+      }
+    }
+  },
+  "independent_validation": {
+    "aggregate_sha256": "aa4887efd7e11f2478cb361b5ec0af37c863c324581cee2c4e3f17ff1f58aff6",
+    "checks": 2397,
+    "execution_record_sha256": "bcff7d85aeb930e872d77c64f54ba8d0ee4f2b135da22ca3041ad4d2f8bd3d0e",
+    "maximum_absolute_error": 1.78261e-10,
+    "mismatches": 0,
+    "status": "PASS",
+    "tolerance": 1e-07,
+    "validation_record_sha256": "4d1b55c5c2010a066a86bec07fa14402033145ff36c80bbfeba00a5c0c753876"
+  },
+  "method": {
+    "fills": "daily theoretical fills; later closing references have execution limitations",
+    "no_between_year_pvalues": true,
+    "no_common_window_ci": true,
+    "option_strategy": "10 short SPY options and 1 long SPXW option, multiplier 100",
+    "primary_rule": "Expiry morning SPY open selects quantity at frozen selected strike + $0.01, tolerance 1e-10; modeled SPY stock purchase occurs at expiry close; residual closes next session open. Options use one-calendar-day DTE from entry close to expiry close; stock holding can span weekends.",
+    "quote_clock": {
+      "2023": "unverified",
+      "2024": "15:59 verified",
+      "2025": "15:59 verified"
+    }
+  },
+  "monthly": {
+    "2023": {
+      "2023-01": {
+        "assignment_counts": {
+          "false": 4,
+          "true": 11
+        },
+        "cost_total": 1631.350493150685,
+        "cost_totals": {
+          "hedge_funding": 648.0602739726028,
+          "option_fees": 107.25,
+          "premium_debit_funding": 0.0958904109589041,
+          "residual_short_borrow": 296.0523287671233,
+          "stock_fees": 65.0,
+          "stock_slippage": 514.892
+        },
+        "dividend_total": 0.0,
+        "gross_total": -3131.000000000019,
+        "mean": -317.49003287671235,
+        "median": -104.88282191780823,
+        "n": 15,
+        "option_baseline_total": 529.0000000000059,
+        "overnight_total": -3660.000000000025,
+        "positive_fraction": 0.3333333333333333,
+        "q0_control_mean": 80.76548511415524,
+        "q0_control_total": 1211.4822767123285,
+        "q_counts": {
+          "0": 7,
+          "1000": 8
+        },
+        "residual_counts": {
+          "long": 1,
+          "short": 4,
+          "zero": 10
+        },
+        "retained_costs_net_minus_overnight": -1102.35049315066,
+        "total": -4762.350493150685
+      },
+      "2023-02": {
+        "assignment_counts": {
+          "false": 9,
+          "true": 6
+        },
+        "cost_total": 989.8385890410959,
+        "cost_totals": {
+          "hedge_funding": 222.33835616438355,
+          "option_fees": 107.25,
+          "premium_debit_funding": 0.12328767123287668,
+          "residual_short_borrow": 202.52794520547945,
+          "stock_fees": 50.0,
+          "stock_slippage": 407.599
+        },
+        "dividend_total": 0.0,
+        "gross_total": 4095.000000000048,
+        "mean": 207.01076073059747,
+        "median": -7.15,
+        "n": 15,
+        "option_baseline_total": -204.9999999999634,
+        "overnight_total": 4300.000000000012,
+        "positive_fraction": 0.4666666666666667,
+        "q0_control_mean": 805.5107278538852,
+        "q0_control_total": 12082.660917808278,
+        "q_counts": {
+          "0": 11,
+          "1000": 4
+        },
+        "residual_counts": {
+          "long": 2,
+          "short": 4,
+          "zero": 9
+        },
+        "retained_costs_net_minus_overnight": -1194.8385890410495,
+        "total": 3105.1614109589623
+      },
+      "2023-03": {
+        "assignment_counts": {
+          "false": 8,
+          "true": 11
+        },
+        "cost_total": 1740.6218630136987,
+        "cost_totals": {
+          "hedge_funding": 769.6369863013698,
+          "option_fees": 135.85,
+          "premium_debit_funding": 0.13698630136986317,
+          "residual_short_borrow": 162.83589041095888,
+          "stock_fees": 75.0,
+          "stock_slippage": 597.162
+        },
+        "dividend_total": -1506.2,
+        "gross_total": -3796.2000000000808,
+        "mean": -291.41167700071793,
+        "median": -120.33146575336644,
+        "n": 19,
+        "option_baseline_total": -460.00000000009663,
+        "overnight_total": -1829.999999999984,
+        "positive_fraction": 0.3157894736842105,
+        "q0_control_mean": -106.67777022350091,
+        "q0_control_total": -2026.8776342465173,
+        "q_counts": {
+          "0": 9,
+          "1000": 10
+        },
+        "residual_counts": {
+          "long": 2,
+          "short": 3,
+          "zero": 14
+        },
+        "retained_costs_net_minus_overnight": -3706.8218630136566,
+        "total": -5536.821863013641
+      },
+      "2023-04": {
+        "assignment_counts": {
+          "false": 8,
+          "true": 7
+        },
+        "cost_total": 1631.4571506849315,
+        "cost_totals": {
+          "hedge_funding": 562.6698630136987,
+          "option_fees": 107.25,
+          "premium_debit_funding": 0.17808219178082174,
+          "residual_short_borrow": 271.125205479452,
+          "stock_fees": 75.0,
+          "stock_slippage": 615.234
+        },
+        "dividend_total": 0.0,
+        "gross_total": 11536.000000000022,
+        "mean": 660.3028566210123,
+        "median": 76.66324657534247,
+        "n": 15,
+        "option_baseline_total": 406.00000000008333,
+        "overnight_total": 11129.999999999938,
+        "positive_fraction": 0.6666666666666666,
+        "q0_control_mean": 616.7135433790032,
+        "q0_control_total": 9250.703150685049,
+        "q_counts": {
+          "0": 7,
+          "1000": 8
+        },
+        "residual_counts": {
+          "long": 4,
+          "short": 3,
+          "zero": 8
+        },
+        "retained_costs_net_minus_overnight": -1225.4571506847533,
+        "total": 9904.542849315185
+      },
+      "2023-05": {
+        "assignment_counts": {
+          "false": 11,
+          "true": 6
+        },
+        "cost_total": 1680.280698630137,
+        "cost_totals": {
+          "hedge_funding": 967.0342465753424,
+          "option_fees": 121.55000000000001,
+          "premium_debit_funding": 0.0821917808219178,
+          "residual_short_borrow": 34.4572602739726,
+          "stock_fees": 60.0,
+          "stock_slippage": 497.15700000000004
+        },
+        "dividend_total": 0.0,
+        "gross_total": -1135.9999999999013,
+        "mean": -165.66357050764827,
+        "median": -53.5784794519966,
+        "n": 17,
+        "option_baseline_total": 244.0000000000373,
+        "overnight_total": -1379.9999999999386,
+        "positive_fraction": 0.4117647058823529,
+        "q0_control_mean": -192.57645850120187,
+        "q0_control_total": -3273.7997945204315,
+        "q_counts": {
+          "0": 9,
+          "1000": 8
+        },
+        "residual_counts": {
+          "long": 3,
+          "short": 1,
+          "zero": 13
+        },
+        "retained_costs_net_minus_overnight": -1436.280698630082,
+        "total": -2816.2806986300207
+      },
+      "2023-06": {
+        "assignment_counts": {
+          "false": 4,
+          "true": 13
+        },
+        "cost_total": 2230.089287671233,
+        "cost_totals": {
+          "hedge_funding": 1071.1671232876713,
+          "option_fees": 121.55000000000001,
+          "premium_debit_funding": 0.3123287671232877,
+          "residual_short_borrow": 214.58383561643836,
+          "stock_fees": 85.0,
+          "stock_slippage": 737.476
+        },
+        "dividend_total": -1638.3700000000001,
+        "gross_total": -4983.369999999875,
+        "mean": -424.32113456889607,
+        "median": -86.76936986301371,
+        "n": 17,
+        "option_baseline_total": -424.99999999991667,
+        "overnight_total": -2919.999999999959,
+        "positive_fraction": 0.29411764705882354,
+        "q0_control_mean": -385.45020789685736,
+        "q0_control_total": -6552.653534246575,
+        "q_counts": {
+          "0": 8,
+          "1000": 9
+        },
+        "residual_counts": {
+          "long": 2,
+          "short": 6,
+          "zero": 9
+        },
+        "retained_costs_net_minus_overnight": -4293.459287671274,
+        "total": -7213.459287671233
+      },
+      "2023-07": {
+        "assignment_counts": {
+          "false": 5,
+          "true": 9
+        },
+        "cost_total": 1731.0954246575343,
+        "cost_totals": {
+          "hedge_funding": 865.8726027397261,
+          "option_fees": 100.10000000000001,
+          "premium_debit_funding": 0.15753424657534246,
+          "residual_short_borrow": 112.20328767123287,
+          "stock_fees": 65.0,
+          "stock_slippage": 587.7620000000001
+        },
+        "dividend_total": 0.0,
+        "gross_total": -116.00000000000648,
+        "mean": -131.93538747554646,
+        "median": -111.85598630139897,
+        "n": 14,
+        "option_baseline_total": 3.9999999999980673,
+        "overnight_total": -120.00000000000455,
+        "positive_fraction": 0.35714285714285715,
+        "q0_control_mean": -840.5595396281884,
+        "q0_control_total": -11767.833554794637,
+        "q_counts": {
+          "0": 6,
+          "1000": 8
+        },
+        "residual_counts": {
+          "long": 2,
+          "short": 3,
+          "zero": 9
+        },
+        "retained_costs_net_minus_overnight": -1727.0954246576462,
+        "total": -1847.0954246576507
+      },
+      "2023-08": {
+        "assignment_counts": {
+          "false": 14,
+          "true": 5
+        },
+        "cost_total": 2068.6191506849314,
+        "cost_totals": {
+          "hedge_funding": 850.3726027397261,
+          "option_fees": 135.85,
+          "premium_debit_funding": 0.1931506849315067,
+          "residual_short_borrow": 144.54739726027395,
+          "stock_fees": 95.0,
+          "stock_slippage": 842.656
+        },
+        "dividend_total": 0.0,
+        "gross_total": 3883.0000000000337,
+        "mean": 95.49372891131942,
+        "median": -17.15136986301347,
+        "n": 19,
+        "option_baseline_total": 93.00000000001307,
+        "overnight_total": 3790.0000000000205,
+        "positive_fraction": 0.47368421052631576,
+        "q0_control_mean": -346.69068637346794,
+        "q0_control_total": -6587.123041095891,
+        "q_counts": {
+          "0": 9,
+          "1000": 10
+        },
+        "residual_counts": {
+          "long": 7,
+          "short": 2,
+          "zero": 10
+        },
+        "retained_costs_net_minus_overnight": -1975.6191506849514,
+        "total": 1814.380849315069
+      },
+      "2023-09": {
+        "assignment_counts": {
+          "false": 10,
+          "true": 6
+        },
+        "cost_total": 1685.0184246575343,
+        "cost_totals": {
+          "hedge_funding": 841.0986301369862,
+          "option_fees": 114.4,
+          "premium_debit_funding": 0.2397260273972603,
+          "residual_short_borrow": 145.0750684931507,
+          "stock_fees": 60.0,
+          "stock_slippage": 524.205
+        },
+        "dividend_total": 0.0,
+        "gross_total": -12020.00000000005,
+        "mean": -856.5636515410922,
+        "median": -145.14428082191773,
+        "n": 16,
+        "option_baseline_total": -1099.9999999999768,
+        "overnight_total": -10920.000000000073,
+        "positive_fraction": 0.1875,
+        "q0_control_mean": -479.6992114725991,
+        "q0_control_total": -7675.187383561585,
+        "q_counts": {
+          "0": 9,
+          "1000": 7
+        },
+        "residual_counts": {
+          "long": 3,
+          "short": 2,
+          "zero": 11
+        },
+        "retained_costs_net_minus_overnight": -2785.0184246574026,
+        "total": -13705.018424657475
+      },
+      "2023-10": {
+        "assignment_counts": {
+          "false": 10,
+          "true": 7
+        },
+        "cost_total": 1736.0410684931508,
+        "cost_totals": {
+          "hedge_funding": 756.7095890410959,
+          "option_fees": 121.55000000000001,
+          "premium_debit_funding": 0.03424657534246575,
+          "residual_short_borrow": 141.75123287671232,
+          "stock_fees": 75.0,
+          "stock_slippage": 640.996
+        },
+        "dividend_total": 0.0,
+        "gross_total": 10951.999999999956,
+        "mean": 542.1152312651088,
+        "median": 62.85,
+        "n": 17,
+        "option_baseline_total": 861.9999999999825,
+        "overnight_total": 10089.999999999975,
+        "positive_fraction": 0.7058823529411765,
+        "q0_control_mean": 187.53005398871878,
+        "q0_control_total": 3188.0109178082193,
+        "q_counts": {
+          "0": 8,
+          "1000": 9
+        },
+        "residual_counts": {
+          "long": 4,
+          "short": 2,
+          "zero": 11
+        },
+        "retained_costs_net_minus_overnight": -874.0410684931248,
+        "total": 9215.95893150685
+      },
+      "2023-11": {
+        "assignment_counts": {
+          "false": 3,
+          "true": 13
+        },
+        "cost_total": 2243.414602739726,
+        "cost_totals": {
+          "hedge_funding": 1216.0506849315068,
+          "option_fees": 114.4,
+          "premium_debit_funding": 0.1246575342465753,
+          "residual_short_borrow": 72.9172602739726,
+          "stock_fees": 85.0,
+          "stock_slippage": 754.922
+        },
+        "dividend_total": 0.0,
+        "gross_total": 2432.9999999999627,
+        "mean": 11.849087328770768,
+        "median": -104.37543835613528,
+        "n": 16,
+        "option_baseline_total": 52.99999999991053,
+        "overnight_total": 2380.0000000000523,
+        "positive_fraction": 0.1875,
+        "q0_control_mean": -702.7436275684895,
+        "q0_control_total": -11243.898041095832,
+        "q_counts": {
+          "0": 3,
+          "1000": 13
+        },
+        "residual_counts": {
+          "long": 2,
+          "short": 2,
+          "zero": 12
+        },
+        "retained_costs_net_minus_overnight": -2190.41460273972,
+        "total": 189.5853972603323
+      },
+      "2023-12": {
+        "assignment_counts": {
+          "false": 6,
+          "true": 10
+        },
+        "cost_total": 1681.206273972603,
+        "cost_totals": {
+          "hedge_funding": 643.5123287671233,
+          "option_fees": 114.4,
+          "premium_debit_funding": 0.28082191780821913,
+          "residual_short_borrow": 303.98712328767124,
+          "stock_fees": 60.0,
+          "stock_slippage": 559.0260000000001
+        },
+        "dividend_total": 0.0,
+        "gross_total": 3736.0000000000805,
+        "mean": 128.42460787671234,
+        "median": -147.42693150684931,
+        "n": 16,
+        "option_baseline_total": -1663.9999999999536,
+        "overnight_total": 5400.000000000035,
+        "positive_fraction": 0.4375,
+        "q0_control_mean": -63.45423801369861,
+        "q0_control_total": -1015.2678082191777,
+        "q_counts": {
+          "0": 9,
+          "1000": 7
+        },
+        "residual_counts": {
+          "long": 1,
+          "short": 4,
+          "zero": 11
+        },
+        "retained_costs_net_minus_overnight": -3345.206273972637,
+        "total": 2054.7937260273975
+      }
+    },
+    "2024": {
+      "2024-01": {
+        "assignment_counts": {
+          "false": 8,
+          "true": 8
+        },
+        "cost_total": 1691.2358219178084,
+        "cost_totals": {
+          "hedge_funding": 1047.3219178082193,
+          "option_fees": 114.4,
+          "premium_debit_funding": 0.25890410958904114,
+          "residual_short_borrow": 0.0,
+          "stock_fees": 50.0,
+          "stock_slippage": 479.255
+        },
+        "dividend_total": 0.0,
+        "gross_total": 1688.000000000058,
+        "mean": -0.20223886985938577,
+        "median": -79.19995205482363,
+        "n": 16,
+        "option_baseline_total": 198.00000000010573,
+        "overnight_total": 1489.9999999999523,
+        "positive_fraction": 0.1875,
+        "q0_control_mean": -530.3432187499964,
+        "q0_control_total": -8485.491499999942,
+        "q_counts": {
+          "0": 7,
+          "1000": 9
+        },
+        "residual_counts": {
+          "long": 1,
+          "short": 0,
+          "zero": 15
+        },
+        "retained_costs_net_minus_overnight": -1493.2358219177024,
+        "total": -3.2358219177501724
+      },
+      "2024-02": {
+        "assignment_counts": {
+          "false": 3,
+          "true": 13
+        },
+        "cost_total": 2106.0231506849314,
+        "cost_totals": {
+          "hedge_funding": 1234.6424657534246,
+          "option_fees": 114.4,
+          "premium_debit_funding": 0.10410958904109587,
+          "residual_short_borrow": 40.86657534246575,
+          "stock_fees": 65.0,
+          "stock_slippage": 651.01
+        },
+        "dividend_total": 0.0,
+        "gross_total": -5426.000000000175,
+        "mean": -470.7514469178192,
+        "median": -161.69489041098814,
+        "n": 16,
+        "option_baseline_total": 1373.999999999836,
+        "overnight_total": -6800.000000000011,
+        "positive_fraction": 0.25,
+        "q0_control_mean": -722.7261665239836,
+        "q0_control_total": -11563.618664383737,
+        "q_counts": {
+          "0": 4,
+          "1000": 12
+        },
+        "residual_counts": {
+          "long": 0,
+          "short": 1,
+          "zero": 15
+        },
+        "retained_costs_net_minus_overnight": -732.023150685096,
+        "total": -7532.023150685107
+      },
+      "2024-03": {
+        "assignment_counts": {
+          "false": 7,
+          "true": 9
+        },
+        "cost_total": 2765.9762465753424,
+        "cost_totals": {
+          "hedge_funding": 1488.501369863014,
+          "option_fees": 114.4,
+          "premium_debit_funding": 0.5465753424657532,
+          "residual_short_borrow": 85.16630136986302,
+          "stock_fees": 95.0,
+          "stock_slippage": 982.362
+        },
+        "dividend_total": 1594.94,
+        "gross_total": -4628.0599999999995,
+        "mean": -462.1272654109589,
+        "median": -139.01877397263183,
+        "n": 16,
+        "option_baseline_total": 236.99999999997908,
+        "overnight_total": -6459.999999999979,
+        "positive_fraction": 0.375,
+        "q0_control_mean": -513.484285102747,
+        "q0_control_total": -8215.748561643952,
+        "q_counts": {
+          "0": 4,
+          "1000": 12
+        },
+        "residual_counts": {
+          "long": 5,
+          "short": 2,
+          "zero": 9
+        },
+        "retained_costs_net_minus_overnight": -934.0362465753633,
+        "total": -7394.036246575342
+      },
+      "2024-04": {
+        "assignment_counts": {
+          "false": 11,
+          "true": 6
+        },
+        "cost_total": 2036.9234383561643,
+        "cost_totals": {
+          "hedge_funding": 978.7835616438356,
+          "option_fees": 121.55000000000001,
+          "premium_debit_funding": 0.2616438356164384,
+          "residual_short_borrow": 42.69123287671232,
+          "stock_fees": 80.0,
+          "stock_slippage": 813.6370000000001
+        },
+        "dividend_total": 0.0,
+        "gross_total": -4018.9999999999422,
+        "mean": -356.2307904915357,
+        "median": -7.150000000000228,
+        "n": 17,
+        "option_baseline_total": 1061.0000000000418,
+        "overnight_total": -5079.999999999984,
+        "positive_fraction": 0.47058823529411764,
+        "q0_control_mean": 122.22377840451591,
+        "q0_control_total": 2077.8042328767706,
+        "q_counts": {
+          "0": 7,
+          "1000": 10
+        },
+        "residual_counts": {
+          "long": 5,
+          "short": 1,
+          "zero": 11
+        },
+        "retained_costs_net_minus_overnight": -975.9234383561234,
+        "total": -6055.923438356107
+      },
+      "2024-05": {
+        "assignment_counts": {
+          "false": 6,
+          "true": 12
+        },
+        "cost_total": 2505.7400136986303,
+        "cost_totals": {
+          "hedge_funding": 1358.5808219178082,
+          "option_fees": 128.70000000000002,
+          "premium_debit_funding": 0.1506849315068493,
+          "residual_short_borrow": 216.73150684931505,
+          "stock_fees": 70.0,
+          "stock_slippage": 731.577
+        },
+        "dividend_total": 0.0,
+        "gross_total": 2346.000000000058,
+        "mean": -8.87444520547622,
+        "median": -84.4932808219178,
+        "n": 18,
+        "option_baseline_total": 55.9999999999809,
+        "overnight_total": 2290.0000000000773,
+        "positive_fraction": 0.3333333333333333,
+        "q0_control_mean": -918.2897275494608,
+        "q0_control_total": -16529.215095890293,
+        "q_counts": {
+          "0": 8,
+          "1000": 10
+        },
+        "residual_counts": {
+          "long": 1,
+          "short": 3,
+          "zero": 14
+        },
+        "retained_costs_net_minus_overnight": -2449.7400136986494,
+        "total": -159.74001369857197
+      },
+      "2024-06": {
+        "assignment_counts": {
+          "false": 4,
+          "true": 10
+        },
+        "cost_total": 1792.7476438356164,
+        "cost_totals": {
+          "hedge_funding": 670.2671232876712,
+          "option_fees": 100.10000000000001,
+          "premium_debit_funding": 0.3726027397260273,
+          "residual_short_borrow": 311.14191780821915,
+          "stock_fees": 60.0,
+          "stock_slippage": 650.866
+        },
+        "dividend_total": 0.0,
+        "gross_total": -5911.0,
+        "mean": -550.2676888454012,
+        "median": -94.22232191780822,
+        "n": 14,
+        "option_baseline_total": -310.99999999997715,
+        "overnight_total": -5600.000000000023,
+        "positive_fraction": 0.35714285714285715,
+        "q0_control_mean": -638.0356115459882,
+        "q0_control_total": -8932.498561643835,
+        "q_counts": {
+          "0": 8,
+          "1000": 6
+        },
+        "residual_counts": {
+          "long": 1,
+          "short": 5,
+          "zero": 8
+        },
+        "retained_costs_net_minus_overnight": -2103.7476438355934,
+        "total": -7703.747643835616
+      },
+      "2024-07": {
+        "assignment_counts": {
+          "false": 8,
+          "true": 8
+        },
+        "cost_total": 2272.84202739726,
+        "cost_totals": {
+          "hedge_funding": 1059.6780821917807,
+          "option_fees": 114.4,
+          "premium_debit_funding": 0.13287671232876713,
+          "residual_short_borrow": 135.77506849315068,
+          "stock_fees": 80.0,
+          "stock_slippage": 882.856
+        },
+        "dividend_total": 0.0,
+        "gross_total": 12297.0,
+        "mean": 626.5098732876712,
+        "median": 65.84796575342466,
+        "n": 16,
+        "option_baseline_total": 527.0000000000182,
+        "overnight_total": 11769.999999999982,
+        "positive_fraction": 0.625,
+        "q0_control_mean": -83.93692380136989,
+        "q0_control_total": -1342.9907808219182,
+        "q_counts": {
+          "0": 6,
+          "1000": 10
+        },
+        "residual_counts": {
+          "long": 4,
+          "short": 2,
+          "zero": 10
+        },
+        "retained_costs_net_minus_overnight": -1745.8420273972424,
+        "total": 10024.15797260274
+      },
+      "2024-08": {
+        "assignment_counts": {
+          "false": 6,
+          "true": 12
+        },
+        "cost_total": 2798.941794520548,
+        "cost_totals": {
+          "hedge_funding": 1283.5109589041097,
+          "option_fees": 128.70000000000002,
+          "premium_debit_funding": 0.10684931506849325,
+          "residual_short_borrow": 314.2569863013698,
+          "stock_fees": 90.0,
+          "stock_slippage": 982.367
+        },
+        "dividend_total": 0.0,
+        "gross_total": 2463.0,
+        "mean": -18.66343302891931,
+        "median": -32.779102739725964,
+        "n": 18,
+        "option_baseline_total": 2453.0000000002365,
+        "overnight_total": 9.999999999763531,
+        "positive_fraction": 0.4444444444444444,
+        "q0_control_mean": -734.839508371385,
+        "q0_control_total": -13227.111150684932,
+        "q_counts": {
+          "0": 6,
+          "1000": 12
+        },
+        "residual_counts": {
+          "long": 3,
+          "short": 3,
+          "zero": 12
+        },
+        "retained_costs_net_minus_overnight": -345.94179452031113,
+        "total": -335.9417945205476
+      },
+      "2024-09": {
+        "assignment_counts": {
+          "false": 7,
+          "true": 8
+        },
+        "cost_total": 2099.8115205479453,
+        "cost_totals": {
+          "hedge_funding": 1084.5767123287671,
+          "option_fees": 107.25,
+          "premium_debit_funding": 0.2890410958904109,
+          "residual_short_borrow": 45.568767123287664,
+          "stock_fees": 70.0,
+          "stock_slippage": 792.127
+        },
+        "dividend_total": 0.0,
+        "gross_total": 11137.0,
+        "mean": 602.4792319634704,
+        "median": -225.59261643835617,
+        "n": 15,
+        "option_baseline_total": -1172.999999999946,
+        "overnight_total": 12309.999999999945,
+        "positive_fraction": 0.3333333333333333,
+        "q0_control_mean": -219.24035707762556,
+        "q0_control_total": -3288.6053561643835,
+        "q_counts": {
+          "0": 5,
+          "1000": 10
+        },
+        "residual_counts": {
+          "long": 3,
+          "short": 1,
+          "zero": 11
+        },
+        "retained_costs_net_minus_overnight": -3272.81152054789,
+        "total": 9037.188479452056
+      },
+      "2024-10": {
+        "assignment_counts": {
+          "false": 9,
+          "true": 10
+        },
+        "cost_total": 2335.1982876712327,
+        "cost_totals": {
+          "hedge_funding": 1347.9794520547946,
+          "option_fees": 135.85,
+          "premium_debit_funding": 0.206849315068493,
+          "residual_short_borrow": 95.67698630136985,
+          "stock_fees": 60.0,
+          "stock_slippage": 695.485
+        },
+        "dividend_total": 0.0,
+        "gross_total": -2442.0,
+        "mean": -251.43148882480173,
+        "median": -74.92427397260275,
+        "n": 19,
+        "option_baseline_total": 687.9999999999952,
+        "overnight_total": -3129.9999999999955,
+        "positive_fraction": 0.3684210526315789,
+        "q0_control_mean": -496.5754924297044,
+        "q0_control_total": -9434.934356164384,
+        "q_counts": {
+          "0": 10,
+          "1000": 9
+        },
+        "residual_counts": {
+          "long": 1,
+          "short": 2,
+          "zero": 16
+        },
+        "retained_costs_net_minus_overnight": -1647.1982876712373,
+        "total": -4777.198287671233
+      },
+      "2024-11": {
+        "assignment_counts": {
+          "false": 4,
+          "true": 11
+        },
+        "cost_total": 2266.260520547945,
+        "cost_totals": {
+          "hedge_funding": 1129.6438356164383,
+          "option_fees": 107.25,
+          "premium_debit_funding": 0.2547945205479454,
+          "residual_short_borrow": 195.3558904109589,
+          "stock_fees": 65.0,
+          "stock_slippage": 768.756
+        },
+        "dividend_total": 0.0,
+        "gross_total": -6321.0,
+        "mean": -572.4840347031964,
+        "median": -47.15547945205479,
+        "n": 15,
+        "option_baseline_total": 1399.0000000000275,
+        "overnight_total": -7720.000000000027,
+        "positive_fraction": 0.4,
+        "q0_control_mean": -1601.3530995433791,
+        "q0_control_total": -24020.296493150687,
+        "q_counts": {
+          "0": 5,
+          "1000": 10
+        },
+        "residual_counts": {
+          "long": 1,
+          "short": 2,
+          "zero": 12
+        },
+        "retained_costs_net_minus_overnight": -867.2605205479176,
+        "total": -8587.260520547945
+      },
+      "2024-12": {
+        "assignment_counts": {
+          "false": 8,
+          "true": 7
+        },
+        "cost_total": 2120.330876712329,
+        "cost_totals": {
+          "hedge_funding": 1152.717808219178,
+          "option_fees": 107.25,
+          "premium_debit_funding": 0.6520547945205479,
+          "residual_short_borrow": 145.76301369863015,
+          "stock_fees": 55.0,
+          "stock_slippage": 658.948
+        },
+        "dividend_total": 0.0,
+        "gross_total": 8053.0,
+        "mean": 395.5112748858447,
+        "median": 12.85,
+        "n": 15,
+        "option_baseline_total": 1503.000000000046,
+        "overnight_total": 6549.9999999999545,
+        "positive_fraction": 0.5333333333333333,
+        "q0_control_mean": 258.8688246575343,
+        "q0_control_total": 3883.032369863014,
+        "q_counts": {
+          "0": 7,
+          "1000": 8
+        },
+        "residual_counts": {
+          "long": 2,
+          "short": 1,
+          "zero": 12
+        },
+        "retained_costs_net_minus_overnight": -617.3308767122835,
+        "total": 5932.669123287671
+      }
+    },
+    "2025": {
+      "2025-01": {
+        "assignment_counts": {
+          "false": 5,
+          "true": 9
+        },
+        "cost_total": 2605.4059315068494,
+        "cost_totals": {
+          "hedge_funding": 1389.4342465753425,
+          "option_fees": 100.10000000000001,
+          "premium_debit_funding": 0.19178082191780835,
+          "residual_short_borrow": 147.01890410958904,
+          "stock_fees": 75.0,
+          "stock_slippage": 893.6610000000001
+        },
+        "dividend_total": 0.0,
+        "gross_total": 1105.0,
+        "mean": -107.17185225048934,
+        "median": -17.84446575342466,
+        "n": 14,
+        "option_baseline_total": 1314.9999999999227,
+        "overnight_total": -209.9999999999227,
+        "positive_fraction": 0.35714285714285715,
+        "q0_control_mean": -1036.7845547945205,
+        "q0_control_total": -14514.983767123289,
+        "q_counts": {
+          "0": 4,
+          "1000": 10
+        },
+        "residual_counts": {
+          "long": 3,
+          "short": 2,
+          "zero": 9
+        },
+        "retained_costs_net_minus_overnight": -1290.405931506928,
+        "total": -1500.4059315068507
+      },
+      "2025-02": {
+        "assignment_counts": {
+          "false": 7,
+          "true": 8
+        },
+        "cost_total": 2492.8336164383563,
+        "cost_totals": {
+          "hedge_funding": 1147.1986301369864,
+          "option_fees": 107.25,
+          "premium_debit_funding": 0.1643835616438356,
+          "residual_short_borrow": 199.252602739726,
+          "stock_fees": 80.0,
+          "stock_slippage": 958.968
+        },
+        "dividend_total": 0.0,
+        "gross_total": 14741.0,
+        "mean": 816.5444255707763,
+        "median": 145.62461643835616,
+        "n": 15,
+        "option_baseline_total": 331.0000000002592,
+        "overnight_total": 14409.999999999742,
+        "positive_fraction": 0.7333333333333333,
+        "q0_control_mean": 65.75228401826482,
+        "q0_control_total": 986.2842602739723,
+        "q_counts": {
+          "0": 7,
+          "1000": 8
+        },
+        "residual_counts": {
+          "long": 4,
+          "short": 4,
+          "zero": 7
+        },
+        "retained_costs_net_minus_overnight": -2161.833616438098,
+        "total": 12248.166383561644
+      },
+      "2025-03": {
+        "assignment_counts": {
+          "false": 10,
+          "true": 6
+        },
+        "cost_total": 1341.1167534246574,
+        "cost_totals": {
+          "hedge_funding": 542.2575342465753,
+          "option_fees": 114.4,
+          "premium_debit_funding": 0.21780821917808216,
+          "residual_short_borrow": 189.9304109589041,
+          "stock_fees": 40.0,
+          "stock_slippage": 454.311
+        },
+        "dividend_total": 0.0,
+        "gross_total": 15087.00000000004,
+        "mean": 859.1177029109614,
+        "median": 12.847260273972829,
+        "n": 16,
+        "option_baseline_total": 587.0000000002678,
+        "overnight_total": 14499.999999999773,
+        "positive_fraction": 0.5,
+        "q0_control_mean": 1250.8464803082218,
+        "q0_control_total": 20013.54368493155,
+        "q_counts": {
+          "0": 11,
+          "1000": 5
+        },
+        "residual_counts": {
+          "long": 1,
+          "short": 2,
+          "zero": 13
+        },
+        "retained_costs_net_minus_overnight": -754.1167534243905,
+        "total": 13745.883246575382
+      },
+      "2025-04": {
+        "assignment_counts": {
+          "false": 6,
+          "true": 11
+        },
+        "cost_total": 2146.7225616438354,
+        "cost_totals": {
+          "hedge_funding": 650.5602739726028,
+          "option_fees": 121.55000000000001,
+          "premium_debit_funding": 0.37534246575342467,
+          "residual_short_borrow": 496.16794520547944,
+          "stock_fees": 75.0,
+          "stock_slippage": 803.069
+        },
+        "dividend_total": 0.0,
+        "gross_total": 19439.0,
+        "mean": 1017.1927904915391,
+        "median": -44.708041095890394,
+        "n": 17,
+        "option_baseline_total": -3431.0000000000587,
+        "overnight_total": 22870.00000000006,
+        "positive_fraction": 0.47058823529411764,
+        "q0_control_mean": 1038.0881027397295,
+        "q0_control_total": 17647.497746575402,
+        "q_counts": {
+          "0": 11,
+          "1000": 6
+        },
+        "residual_counts": {
+          "long": 2,
+          "short": 7,
+          "zero": 8
+        },
+        "retained_costs_net_minus_overnight": -5577.722561643892,
+        "total": 17292.277438356166
+      },
+      "2025-05": {
+        "assignment_counts": {
+          "false": 7,
+          "true": 10
+        },
+        "cost_total": 2360.6463698630137,
+        "cost_totals": {
+          "hedge_funding": 1262.0260273972603,
+          "option_fees": 121.55000000000001,
+          "premium_debit_funding": 0.2191780821917808,
+          "residual_short_borrow": 96.45616438356166,
+          "stock_fees": 70.0,
+          "stock_slippage": 810.395
+        },
+        "dividend_total": 0.0,
+        "gross_total": 29772.99999999996,
+        "mean": 1612.4913900080555,
+        "median": -24.994726027397263,
+        "n": 17,
+        "option_baseline_total": 992.9999999999864,
+        "overnight_total": 28779.999999999975,
+        "positive_fraction": 0.47058823529411764,
+        "q0_control_mean": 388.07958501208464,
+        "q0_control_total": 6597.352945205439,
+        "q_counts": {
+          "0": 7,
+          "1000": 10
+        },
+        "residual_counts": {
+          "long": 2,
+          "short": 2,
+          "zero": 13
+        },
+        "retained_costs_net_minus_overnight": -1367.6463698630287,
+        "total": 27412.353630136946
+      },
+      "2025-06": {
+        "assignment_counts": {
+          "false": 6,
+          "true": 8
+        },
+        "cost_total": 2481.538712328767,
+        "cost_totals": {
+          "hedge_funding": 1240.5780821917808,
+          "option_fees": 100.10000000000001,
+          "premium_debit_funding": 0.16164383561643836,
+          "residual_short_borrow": 98.61698630136986,
+          "stock_fees": 80.0,
+          "stock_slippage": 962.082
+        },
+        "dividend_total": 1761.1200000000001,
+        "gross_total": 13469.119999999999,
+        "mean": 784.8272348336595,
+        "median": -86.57359589041096,
+        "n": 14,
+        "option_baseline_total": 428.0000000000273,
+        "overnight_total": 11279.999999999973,
+        "positive_fraction": 0.35714285714285715,
+        "q0_control_mean": -327.46556653620064,
+        "q0_control_total": -4584.517931506809,
+        "q_counts": {
+          "0": 4,
+          "1000": 10
+        },
+        "residual_counts": {
+          "long": 4,
+          "short": 2,
+          "zero": 8
+        },
+        "retained_costs_net_minus_overnight": -292.4187123287393,
+        "total": 10987.581287671233
+      },
+      "2025-07": {
+        "assignment_counts": {
+          "false": 9,
+          "true": 9
+        },
+        "cost_total": 3637.147404109589,
+        "cost_totals": {
+          "hedge_funding": 1895.795890410959,
+          "option_fees": 128.70000000000002,
+          "premium_debit_funding": 0.16712328767123288,
+          "residual_short_borrow": 50.99589041095891,
+          "stock_fees": 115.0,
+          "stock_slippage": 1446.4885
+        },
+        "dividend_total": 0.0,
+        "gross_total": 6719.0,
+        "mean": 171.21403310502282,
+        "median": 6.178273972602739,
+        "n": 18,
+        "option_baseline_total": 934.000000000259,
+        "overnight_total": 5784.999999999741,
+        "positive_fraction": 0.5,
+        "q0_control_mean": -27.157538812785614,
+        "q0_control_total": -488.83569863014105,
+        "q_counts": {
+          "0": 3,
+          "1000": 15
+        },
+        "residual_counts": {
+          "long": 7,
+          "short": 1,
+          "zero": 10
+        },
+        "retained_costs_net_minus_overnight": -2703.1474041093297,
+        "total": 3081.852595890411
+      },
+      "2025-08": {
+        "assignment_counts": {
+          "false": 8,
+          "true": 8
+        },
+        "cost_total": 2763.092506849315,
+        "cost_totals": {
+          "hedge_funding": 1492.0904109589042,
+          "option_fees": 114.4,
+          "premium_debit_funding": 0.15342465753424647,
+          "residual_short_borrow": 53.147671232876704,
+          "stock_fees": 80.0,
+          "stock_slippage": 1023.301
+        },
+        "dividend_total": 0.0,
+        "gross_total": 2476.0,
+        "mean": -17.94328167808219,
+        "median": -95.53287671232877,
+        "n": 16,
+        "option_baseline_total": 1186.00000000015,
+        "overnight_total": 1289.99999999985,
+        "positive_fraction": 0.4375,
+        "q0_control_mean": -79.78775342465754,
+        "q0_control_total": -1276.6040547945206,
+        "q_counts": {
+          "0": 5,
+          "1000": 11
+        },
+        "residual_counts": {
+          "long": 4,
+          "short": 1,
+          "zero": 11
+        },
+        "retained_costs_net_minus_overnight": -1577.092506849165,
+        "total": -287.09250684931504
+      },
+      "2025-09": {
+        "assignment_counts": {
+          "false": 0,
+          "true": 0
+        },
+        "cost_total": 0.0,
+        "cost_totals": {
+          "hedge_funding": 0.0,
+          "option_fees": 0.0,
+          "premium_debit_funding": 0.0,
+          "residual_short_borrow": 0.0,
+          "stock_fees": 0.0,
+          "stock_slippage": 0.0
+        },
+        "dividend_total": 0.0,
+        "gross_total": 0.0,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "option_baseline_total": 0.0,
+        "overnight_total": 0.0,
+        "positive_fraction": null,
+        "q0_control_mean": null,
+        "q0_control_total": 0.0,
+        "q_counts": {
+          "0": 0,
+          "1000": 0
+        },
+        "residual_counts": {
+          "long": 0,
+          "short": 0,
+          "zero": 0
+        },
+        "retained_costs_net_minus_overnight": null,
+        "total": 0.0
+      },
+      "2025-10": {
+        "assignment_counts": {
+          "false": 0,
+          "true": 0
+        },
+        "cost_total": 0.0,
+        "cost_totals": {
+          "hedge_funding": 0.0,
+          "option_fees": 0.0,
+          "premium_debit_funding": 0.0,
+          "residual_short_borrow": 0.0,
+          "stock_fees": 0.0,
+          "stock_slippage": 0.0
+        },
+        "dividend_total": 0.0,
+        "gross_total": 0.0,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "option_baseline_total": 0.0,
+        "overnight_total": 0.0,
+        "positive_fraction": null,
+        "q0_control_mean": null,
+        "q0_control_total": 0.0,
+        "q_counts": {
+          "0": 0,
+          "1000": 0
+        },
+        "residual_counts": {
+          "long": 0,
+          "short": 0,
+          "zero": 0
+        },
+        "retained_costs_net_minus_overnight": null,
+        "total": 0.0
+      },
+      "2025-11": {
+        "assignment_counts": {
+          "false": 0,
+          "true": 0
+        },
+        "cost_total": 0.0,
+        "cost_totals": {
+          "hedge_funding": 0.0,
+          "option_fees": 0.0,
+          "premium_debit_funding": 0.0,
+          "residual_short_borrow": 0.0,
+          "stock_fees": 0.0,
+          "stock_slippage": 0.0
+        },
+        "dividend_total": 0.0,
+        "gross_total": 0.0,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "option_baseline_total": 0.0,
+        "overnight_total": 0.0,
+        "positive_fraction": null,
+        "q0_control_mean": null,
+        "q0_control_total": 0.0,
+        "q_counts": {
+          "0": 0,
+          "1000": 0
+        },
+        "residual_counts": {
+          "long": 0,
+          "short": 0,
+          "zero": 0
+        },
+        "retained_costs_net_minus_overnight": null,
+        "total": 0.0
+      },
+      "2025-12": {
+        "assignment_counts": {
+          "false": 0,
+          "true": 0
+        },
+        "cost_total": 0.0,
+        "cost_totals": {
+          "hedge_funding": 0.0,
+          "option_fees": 0.0,
+          "premium_debit_funding": 0.0,
+          "residual_short_borrow": 0.0,
+          "stock_fees": 0.0,
+          "stock_slippage": 0.0
+        },
+        "dividend_total": 0.0,
+        "gross_total": 0.0,
+        "mean": null,
+        "median": null,
+        "n": 0,
+        "option_baseline_total": 0.0,
+        "overnight_total": 0.0,
+        "positive_fraction": null,
+        "q0_control_mean": null,
+        "q0_control_total": 0.0,
+        "q_counts": {
+          "0": 0,
+          "1000": 0
+        },
+        "residual_counts": {
+          "long": 0,
+          "short": 0,
+          "zero": 0
+        },
+        "retained_costs_net_minus_overnight": null,
+        "total": 0.0
+      }
+    }
+  },
+  "primary_case": {
+    "arm": "open_itm_q1000",
+    "cost_mode": "base",
+    "fill": "full_cross",
+    "funding": "gross_prefunding",
+    "slippage_bp": 1
+  },
+  "public_report": {
+    "external_render_receipt_sha256": "bce5520a753c5e8e01d39624ca8c0c51b76b0bd8ef693b6c4b0d8a61512d6eb7",
+    "markdown_sha256": "cb4b32d31672bed36e7b97c751b73aba0d8fc9ad4436e4ad4e33c1c243bd312f",
+    "pages": 5,
+    "pdf_sha256": "3fb35898dccf8153a4bbda99063563c8bd5be429f44f1a210be766867bb822b7",
+    "render_git_sha": "c2bb0fb52e3a281518d829bebdc9a6d346c92349"
+  },
+  "publication_record": {
+    "command_arguments": "Omitted because the source receipt includes private absolute paths.",
+    "source_aggregate_sha256": "aa4887efd7e11f2478cb361b5ec0af37c863c324581cee2c4e3f17ff1f58aff6",
+    "source_findings_sha256": "5e29acbac470ac4ba2d18010d76ba609b8398c7c421dd582e4455f09dfd075c8",
+    "source_run_receipt_sha256": "f2bc5ec4f7882e0c4339384d82ed4943852a5ee4d8be2e481a3167df032b8004"
+  },
+  "raw_2024_rerun_validation": {
+    "checks": 2361458,
+    "mismatches": 0,
+    "receipt_sha256_prefix": "b940",
+    "status": "PASS"
+  },
+  "run": {
+    "git_clean": true,
+    "git_sha": "1ce2763318f930f793da29293f6b5df482ef3b42",
+    "loaded_code_sha256": "c154660c93f5faa269742428d516cf0cd544232147eaa7a7af390a4363ce1047",
+    "manifest_sha256": "dac4f37eb6f1685308067cbffbca0b91a46ea79d286935e6f1874b61c5f36aa5",
+    "protocol_sha256": "207577186b5c0c9c078dcc3f203fefa86558a793fe4cb3d5aa96838187c76642",
+    "started_utc": "2026-10-30T08:04:28.490820+00:00"
+  },
+  "schema_version": 1,
+  "sensitivity": {
+    "2024": [
+      {
+        "cost_means": {
+          "hedge_funding": 14.005121180189674,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.017112750263435193,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": 13.535180189673344,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 70.9548928696874,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.017112750263435193,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": -43.414591499824375,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 14.005121180189674,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.017112750263435193,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": -33.076337759044605,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 70.9548928696874,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.017112750263435193,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": -90.02610944854231,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 14.005121180189674,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.017112750263435193,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": -219.52240955391642,
+        "n": 195,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 70.9548928696874,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.017112750263435193,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": -276.4721812434141,
+        "n": 195,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 28.010242360379348,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.03422550052687039,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": -33.63698489638217,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 141.9097857393748,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.03422550052687039,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": -147.5365282753776,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 28.010242360379348,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.03422550052687039,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": -80.24850284510012,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 141.9097857393748,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.03422550052687039,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": -194.14804622409557,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 28.010242360379348,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.03422550052687039,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": -266.6945746399719,
+        "n": 195,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 141.9097857393748,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.03422550052687039,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": -380.5941180189674,
+        "n": 195,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 14.005121180189674,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.015728837372672982,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": 23.84425641025643,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 70.9548928696874,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.015728837372672982,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": -33.10551527924129,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 14.005121180189674,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.015728837372672982,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": -22.767261538461515,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 70.9548928696874,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.015728837372672982,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": -79.71703322795923,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 14.005121180189674,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.015728837372672982,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": -209.21333333333334,
+        "n": 195,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 70.9548928696874,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.015728837372672982,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": -266.163105022831,
+        "n": 195,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 28.010242360379348,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.031457674745345963,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": -23.32652476290831,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 141.9097857393748,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.031457674745345963,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": -137.22606814190374,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 28.010242360379348,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.031457674745345963,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": -69.93804271162627,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 141.9097857393748,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.031457674745345963,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": -183.8375860906217,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 28.010242360379348,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.031457674745345963,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": -256.38411450649807,
+        "n": 195,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 141.9097857393748,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.031457674745345963,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": -370.2836578854935,
+        "n": 195,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 14.005121180189674,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.014457323498419388,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": 34.153220231822985,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 70.9548928696874,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.014457323498419388,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": -22.796551457674735,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 14.005121180189674,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.014457323498419388,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": -12.458297716894965,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 70.9548928696874,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.014457323498419388,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": -69.40806940639268,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 14.005121180189674,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.014457323498419388,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": -198.9043695117668,
+        "n": 195,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 70.9548928696874,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.014457323498419388,
+          "residual_short_borrow": 8.35381664910432,
+          "stock_fees": 4.3076923076923075,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": -255.8541412012645,
+        "n": 195,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 28.010242360379348,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.028914646996838777,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": -13.016289427467507,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 141.9097857393748,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.028914646996838777,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": -126.91583280646294,
+        "n": 195,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 28.010242360379348,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.028914646996838777,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": -59.62780737618545,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 141.9097857393748,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.028914646996838777,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 46.611517948717946
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": -173.52735075518086,
+        "n": 195,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 28.010242360379348,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.028914646996838777,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": -246.07387917105726,
+        "n": 195,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 141.9097857393748,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.028914646996838777,
+          "residual_short_borrow": 27.8460554970144,
+          "stock_fees": 8.615384615384615,
+          "stock_slippage": 233.05758974358977
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": -359.97342255005265,
+        "n": 195,
+        "slippage_bp": 5.0
+      }
+    ],
+    "2025": [
+      {
+        "cost_means": {
+          "hedge_funding": 26.442206881674036,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.012997519145723222,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": 760.5879721712868,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 75.74756768417647,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.012997519145723222,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": 711.2826113687844,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 26.442206881674036,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.012997519145723222,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": 702.6960391004206,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 75.74756768417647,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.012997519145723222,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": 653.3906782979183,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 26.442206881674036,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.012997519145723222,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": 471.1283068169561,
+        "n": 127,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 75.74756768417647,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.012997519145723222,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "base",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": 421.82294601445363,
+        "n": 127,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 52.88441376334807,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.025995038291446445,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": 695.4754028691619,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 151.49513536835295,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.025995038291446445,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": 596.8646812641571,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 52.88441376334807,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.025995038291446445,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": 637.5834697982957,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 151.49513536835295,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.025995038291446445,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": 538.972748193291,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 52.88441376334807,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.025995038291446445,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "assignment_cash_net",
+        "mean": 406.0157375148312,
+        "n": 127,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 151.49513536835295,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.025995038291446445,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "stress",
+        "fill": "full_cross",
+        "funding": "gross_prefunding",
+        "mean": 307.4050159098263,
+        "n": 127,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 26.442206881674036,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.0118865278826448,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": 772.8922327688491,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 75.74756768417647,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.0118865278826448,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": 723.5868719663466,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 26.442206881674036,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.0118865278826448,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": 715.000299697983,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 75.74756768417647,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.0118865278826448,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": 665.6949388954805,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 26.442206881674036,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.0118865278826448,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": 483.43256741451836,
+        "n": 127,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 75.74756768417647,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.0118865278826448,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "base",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": 434.1272066120159,
+        "n": 127,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 52.88441376334807,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.0237730557652896,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": 707.7807744579873,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 151.49513536835295,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.0237730557652896,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": 609.1700528529824,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 52.88441376334807,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.0237730557652896,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": 649.888841387121,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 151.49513536835295,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.0237730557652896,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": 551.2781197821163,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 52.88441376334807,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.0237730557652896,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "assignment_cash_net",
+        "mean": 418.32110910365657,
+        "n": 127,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 151.49513536835295,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.0237730557652896,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "stress",
+        "fill": "halfway",
+        "funding": "gross_prefunding",
+        "mean": 319.71038749865164,
+        "n": 127,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 26.442206881674036,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.010797109265451403,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": 785.1964717937655,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 75.74756768417647,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.010797109265451403,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": 735.8911109912631,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 26.442206881674036,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.010797109265451403,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": 727.3045387228993,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 75.74756768417647,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.010797109265451403,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": 677.999177920397,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 26.442206881674036,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.010797109265451403,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": 495.73680643943476,
+        "n": 127,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 75.74756768417647,
+          "option_fees": 7.15,
+          "premium_debit_funding": 0.010797109265451403,
+          "residual_short_borrow": 10.484933664113903,
+          "stock_fees": 4.84251968503937,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "base",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": 446.4314456369324,
+        "n": 127,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 52.88441376334807,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.021594218530902806,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": 720.0861029015209,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 151.49513536835295,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.021594218530902806,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 0.0
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": 621.475381296516,
+        "n": 127,
+        "slippage_bp": 0.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 52.88441376334807,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.021594218530902806,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": 662.1941698306548,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 151.49513536835295,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.021594218530902806,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 57.89193307086614
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": 563.5834482256498,
+        "n": 127,
+        "slippage_bp": 1.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 52.88441376334807,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.021594218530902806,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "assignment_cash_net",
+        "mean": 430.62643754719016,
+        "n": 127,
+        "slippage_bp": 5.0
+      },
+      {
+        "cost_means": {
+          "hedge_funding": 151.49513536835295,
+          "option_fees": 16.5,
+          "premium_debit_funding": 0.021594218530902806,
+          "residual_short_borrow": 34.94977888037968,
+          "stock_fees": 9.68503937007874,
+          "stock_slippage": 289.45966535433075
+        },
+        "cost_mode": "stress",
+        "fill": "midpoint",
+        "funding": "gross_prefunding",
+        "mean": 332.0157159421853,
+        "n": 127,
+        "slippage_bp": 5.0
+      }
+    ]
+  },
+  "source_evaluator_git_shas": {
+    "2023": "64e72887b782fdf838257a09877ffb817dfbfbdf",
+    "2024_2025": "44ed294deddb85df594ad1e1c8a5a91bb22d08d7"
+  },
+  "source_hashes": {
+    "attribution_manifest_2023": "f029a778ee59fd27dafe37e561fc8f4a4e7a4a28f37f126dc920f3f340291a47",
+    "case_ledgers_2024_2025": "17a11c5cb21fcf00109a5f9b80f16aca8dc5be104f0d8c16e37daae2f8bcf638",
+    "evaluator_manifest_2023": "99d2b5fd64a6180a71e5e0513e2e58b4b4199ccc707ebaeb6eb802b99ae099c7",
+    "evaluator_manifest_2024_2025": "fbb9e214d3bca4323dbad44f17c9c5b09403f875db53c60db1af713a32713628",
+    "execution_2023": "3b50a9eea10ee0574f9fb2f6162ff491463503c50107415448d34a9865cc766a",
+    "execution_2024_2025": "ad559ec7f5b508025da6666b94b5cb80e0e23aaba7bd98ff92ae56d8f86caaf1",
+    "ledger_2023": "f413ad27f84407a28f152b1339d2cd5ba93de7057fddc3001d38494cf1161e04",
+    "summaries_2024_2025": "29a68896ee23d5cf02237ca089bc7725765877d135130a4040486bf0f9dbf02b",
+    "summary_2023": "22f712dbd9b63483035b3907f884848cc9bdadb6992dca1fec24333215113404",
+    "uncertainty_2024_2025": "b9b43b4978d8fa8ddd3ca5527caa64318f8be1f7e131ae056d5221e361271442",
+    "validated_rows_2023": "ba6728adaa6e00c95ded3b9477624827d269332f50c483050a09a356f6036f9e",
+    "validation_2023": "011edba0f0bd7949e78ac1662551945d1298d1b9f8a8b3ece5c048f7372558bf"
+  },
+  "status": "SUMMARIZED_NOT_VALIDATED",
+  "synthetic_fixture": false,
+  "tail_removals": {
+    "full_2023": {
+      "1": {
+        "bottom_removed_mean": -27.898292448189288,
+        "n_remaining": 195,
+        "top_removed_mean": -74.66435012293493
+      },
+      "10": {
+        "bottom_removed_mean": 122.33975740168138,
+        "n_remaining": 186,
+        "top_removed_mean": -218.13192554131558
+      },
+      "5": {
+        "bottom_removed_mean": 43.58044739295917,
+        "n_remaining": 191,
+        "top_removed_mean": -143.46594857634534
+      }
+    },
+    "full_2024": {
+      "1": {
+        "bottom_removed_mean": -52.86433201525208,
+        "n_remaining": 194,
+        "top_removed_mean": -138.85460563479734
+      },
+      "10": {
+        "bottom_removed_mean": 157.81200888559823,
+        "n_remaining": 185,
+        "top_removed_mean": -327.81620784894545
+      },
+      "5": {
+        "bottom_removed_mean": 60.796252703677006,
+        "n_remaining": 190,
+        "top_removed_mean": -245.6639731074261
+      }
+    },
+    "jan_aug_2023": {
+      "1": {
+        "bottom_removed_mean": -24.580666596415494,
+        "n_remaining": 130,
+        "top_removed_mean": -94.72975310853396
+      },
+      "10": {
+        "bottom_removed_mean": 181.6538518057309,
+        "n_remaining": 121,
+        "top_removed_mean": -306.04274595267697
+      },
+      "5": {
+        "bottom_removed_mean": 79.1315197869125,
+        "n_remaining": 126,
+        "top_removed_mean": -195.90052228745287
+      }
+    },
+    "jan_aug_2024": {
+      "1": {
+        "bottom_removed_mean": -91.2390708113804,
+        "n_remaining": 130,
+        "top_removed_mean": -200.07688893572183
+      },
+      "10": {
+        "bottom_removed_mean": 180.55830691724358,
+        "n_remaining": 121,
+        "top_removed_mean": -401.53793150685027
+      },
+      "5": {
+        "bottom_removed_mean": 78.93562872363557,
+        "n_remaining": 126,
+        "top_removed_mean": -324.69330365296895
+      }
+    },
+    "jan_aug_2025": {
+      "1": {
+        "bottom_removed_mean": 736.847837953903,
+        "n_remaining": 126,
+        "top_removed_mean": 497.67203212654925
+      },
+      "10": {
+        "bottom_removed_mean": 1117.777009893455,
+        "n_remaining": 117,
+        "top_removed_mean": -105.30200567849198
+      },
+      "5": {
+        "bottom_removed_mean": 981.5724031551763,
+        "n_remaining": 122,
+        "top_removed_mean": 152.593055973501
+      }
+    }
+  }
+}
