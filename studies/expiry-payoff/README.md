@@ -10,7 +10,19 @@ weights for each expiry. It models fees, financing, dividends and conditional
 stock cover. These are historical sensitivities on data already inspected during
 the research. No dependable executable edge has been established.
 
-## Evaluated followups
+## Latest report
+
+The 2026-11-18 [morning execution research note](../../results/expiry-payoff/morning-execution-20261118.md)
+explains the hypothesis, primary outcomes, and limits. The approved
+[morning execution PDF](../../reports/expiry-payoff/morning-execution-study-20261118.pdf),
+[Markdown report](../../reports/expiry-payoff/morning-execution-study-20261118.md),
+and [aggregate CSV](../../reports/expiry-payoff/morning-execution-study-20261118.csv)
+report the prior-close signal with expiry-open stock purchase. No dependable,
+repeatable after-cost edge was established. This is an additional expiry-payoff
+question; the original matched-moneyness study conclusion is unchanged. The
+historical public rerun is **NOT RUN**.
+
+## Previous evaluated followups
 
 - [OptionMetrics replication](../../results/expiry-payoff/optionmetrics-replication.md)
   reports the 2024 and partial 2025 periods.
@@ -35,7 +47,7 @@ the research. No dependable executable edge has been established.
   between-year p-values were calculated.
 - The five-page [three-year morning-hedge assessment PDF](../../reports/expiry-payoff/morning-hedge-assessment-20261030.pdf)
   and [full Markdown report](../../reports/expiry-payoff/morning-hedge-assessment-20261030.md)
-  contain the final report. The former eight-page version is preserved in the
+  contain the previous report. The former eight-page version is preserved in the
   [eight-page archive](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.md)
   with its [PDF](../../reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.pdf).
   The earlier five-page version remains in the

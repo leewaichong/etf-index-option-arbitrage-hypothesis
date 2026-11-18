@@ -10,30 +10,22 @@ hypothetical daily-close cash ledgers, modeled carry and costs, and later
 historical sensitivities. Its results do not revise the matched-moneyness
 measurement.
 
-The latest expiry-payoff addition is a three-year comparison of the morning-price
-hedge across 2023, 2024 and 2025. See the
-[comparison note](results/expiry-payoff/morning-hedge-three-year-20261030.md)
-and [aggregate summary](results/expiry-payoff/morning-hedge-three-year-20261030-summary.json).
-The preceding addition was a post-hoc year-driver attribution of the
-2023 and 2025 morning-hedge cohorts. Read the
-[attribution note](results/expiry-payoff/morning-hedge-year-drivers-20261030.md)
-and [approved aggregate summary](results/expiry-payoff/morning-hedge-year-drivers-20261030-summary.json).
-The option-quote clock is verified at 15:59 for 2024 and 2025; the 2023 quote
-clock remains unverified.
-The five-page three-year morning-hedge assessment is available at
-[Markdown](reports/expiry-payoff/morning-hedge-assessment-20261030.md) and
-[PDF](reports/expiry-payoff/morning-hedge-assessment-20261030.pdf). The former
-eight-page assessment remains in the
-[eight-page archive](reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.md)
-with its [PDF](reports/expiry-payoff/archive/morning-hedge-assessment-before-2024-comparison-20261030.pdf).
-The earlier five-page version remains in the
-[older archive](reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.md)
-with its [PDF](reports/expiry-payoff/archive/morning-hedge-assessment-before-year-attribution-20261030.pdf).
-The earlier 2026-10-30 overnight-hedge assessment remains in
-[Markdown](reports/expiry-payoff/overnight-hedge-assessment-20261030.md) and
-[PDF](reports/expiry-payoff/executive-report-20261030.pdf). The 2026-10-29
-stock-reference report remains available as the
-[previous stock-reference PDF](reports/expiry-payoff/executive-report-20261029.pdf).
+The latest expiry-payoff addition is the 2026-11-18 morning execution study. Read the
+[research note](results/expiry-payoff/morning-execution-20261118.md),
+[approved PDF](reports/expiry-payoff/morning-execution-study-20261118.pdf),
+[Markdown report](reports/expiry-payoff/morning-execution-study-20261118.md), and
+[aggregate CSV](reports/expiry-payoff/morning-execution-study-20261118.csv).
+It tests prior-close signal with expiry-open stock purchase. The original
+matched-moneyness conclusion is unchanged. The historical public rerun was NOT RUN.
+
+Previous expiry-payoff studies remain available, including the
+[three-year morning-hedge comparison](results/expiry-payoff/morning-hedge-three-year-20261030.md)
+and [aggregate summary](results/expiry-payoff/morning-hedge-three-year-20261030-summary.json),
+the [year-driver attribution](results/expiry-payoff/morning-hedge-year-drivers-20261030.md)
+and [approved summary](results/expiry-payoff/morning-hedge-year-drivers-20261030-summary.json),
+and the [three-year assessment](reports/expiry-payoff/morning-hedge-assessment-20261030.md)
+with its [PDF](reports/expiry-payoff/morning-hedge-assessment-20261030.pdf).
+Earlier reports remain in the expiry-payoff directory and its archive.
 Public result notes contain aggregate summaries, not the licensed inputs or
 private run receipts.
 
